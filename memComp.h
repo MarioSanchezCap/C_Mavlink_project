@@ -14,3 +14,5 @@ float roll;
 float yaw;
 } TAttitude;
 
+int id_sem1=0xA;
+

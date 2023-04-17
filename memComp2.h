@@ -14,3 +14,4 @@ float y;
 float z;
 } TPos;
 
+int id_sem2=0xB;

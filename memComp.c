@@ -20,14 +20,31 @@ compartir */
 int shmid1;
 int shmid2;
 
+int semid1,semid2;
 int currentShmid;
 
 TAttitude *Attitude;
 TPos *Pos;
 
+void P(int semid,int sem){
+    struct sembuf buf;
+    buf.sem_num=sem;
+    buf.sem_op=-1;
+    buf.sem_flg=0;
+    semop(semid,&buf,1);
+}
+
+void V(int semid,int sem){
+    struct sembuf buf;
+    buf.sem_num=sem;
+    buf.sem_op=1;
+    buf.sem_flg=0;
+    semop(semid,&buf,1);
+}
+
 int SHM_Init(void){
 
-    int semid = semget(0xa,0,0);
+     semid1 = semget(id_sem1,0,0);
 
     if((shmid1 = shmget(SHM_ID_1, sizeof(TAttitude), IPC_CREAT|0666)) == -1)
 {
@@ -35,6 +52,8 @@ perror("shmget1");
 exit(EXIT_FAILURE);
 }
     Attitude = (TAttitude *)shmat(shmid1,0,0);
+
+    semid2 = semget(id_sem2,0,0);
     if((shmid2 = shmget(SHM_ID_2, sizeof(TPos), IPC_CREAT|0666)) == -1)
 {
 perror("shmget2");
@@ -46,7 +65,7 @@ exit(EXIT_FAILURE);
 int SHM_InitSlot(unsigned int slot_id)
 {
     if(slot_id==&shmid1){
-        sem_init(&sem1,1,1);
+        semid1 = semget(id_sem1,0,0);
         if((shmid1 = shmget(SHM_ID_1, sizeof(TAttitude), IPC_CREAT|0666)) == -1)
 {
 perror("shmget1");
@@ -55,7 +74,7 @@ exit(EXIT_FAILURE);
     Attitude = (TAttitude *)shmat(shmid1,0,0);
     }
     if(slot_id==&shmid2){
-            sem_init(&sem2,1,1);
+            semid2 = semget(id_sem2,0,0);
             if((shmid2 = shmget(SHM_ID_2, sizeof(TPos), IPC_CREAT|0666)) == -1)
 {
 perror("shmget2");
@@ -71,18 +90,19 @@ int  SHM_ReadSlot(unsigned int slot_id, void* data, unsigned int data_size)
 {
 
     if(slot_id==shmid1){
-        sem_wait(&sem1);
+        P(semid1,1);
         data->pitch=Attitude->pitch;
         data->roll=Attitude->roll;
         data->yaw=Attitude->yaw;
-        sem_post(&sem1);
+        V(semid1,0);
     }
     if(slot_id==shmid2){
-        sem_wait(&sem2);
-        data->x=Pos->pitch;
-        data->y=Pos->roll;
-        data->z=Pos->yaw;
+        P(semid2,1);
+        data->x=Pos->x;
+        data->y=Pos->y;
+        data->z=Pos->z;
         sem_post(&sem2);
+        V(semid2,0);
     }
 
 
@@ -91,18 +111,18 @@ int  SHM_WriteSlot(unsigned int slot_id, void* data, unsigned int data_size)
 {
 
     if(slot_id==shmid1){
-        sem_wait(&sem1);
+        P(semid1,1);
         Attitude->pitch=data->pitch;
         Attitude->roll=data->roll;
         Attitude->yaw=data->yaw;
-        sem_post(&sem1);
+        V(semid1,0);
     }
     if(slot_id==shmid2){
-        sem_wait(&sem2);
-        Pos->x=data->pitch;
-        Pos->y=data->roll;
-        Pos->z=data->yaw;
-        sem_post(&sem2);
+        P(semid2,1);
+        Pos->x=data->x;
+        Pos->y=data->y;
+        Pos->z=data->z;
+        V(semid2,0);
     }
 
 }
