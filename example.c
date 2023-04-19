@@ -4,7 +4,7 @@ int LNX_SHM_EXPORT SHM_Init(void);
 int LNX_SHM_EXPORT SHM_InitSlot(unsigned int slot_id, unsigned int data_size);
 int LNX_SHM_EXPORT SHM_ReadSlot(unsigned int slot_id, void* data, unsigned int data_size);
 int LNX_SHM_EXPORT SHM_WriteSlot(unsigned int slot_id, void* data, unsigned int data_size);
-int LNX_SHM_EXPORT SHM_InitSlot(unsigned int slot_id, unsigned int data_size);
+
 
 ///proceso A, productor
 
