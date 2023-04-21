@@ -1,38 +1,42 @@
-#include <sys/mman.h>
+/*#include <sys/mman.h>
 #include <fcntl.h>
 #include <sys/stat.h>
 #include <errno.h>
 #include <semaphore.h>
+*/
 
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <pthread.h>
+#include <semaphore.h>
+#include <sys/mman.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <errno.h>
+
+#define MAX_SLOTS 300
 
 typedef struct
 {
-    float pitch;
-    float roll;
-    float yaw;
-} TAttitude;
+    unsigned int payloadSize;
+    pthread_mutex_t mutex;
+    //void* dato;
+    sem_t *semaforo;
 
-typedef struct
-{
-    float x;
-    float y;
-    float z;
-} TPos;
-
-int fd1, fd2;
-
-TAttitude *ptr1;
-TPos *ptr2;
-struct stat stat1, stat2;
-
-/*Semaforos*/
-sem_t *semid1, *semid2;
+}SHM_Slot;
 
 
 /*Funciones*/
 int  SHM_Init(void);
-//int  SHM_InitSlot(unsigned int slot_id, unsigned int data_size);
-int  SHM_ReadSlot(unsigned int slot_id, void* data, unsigned int data_size);
-int  SHM_WriteSlot(unsigned int slot_id, void* data, unsigned int data_size);
+int  SHM_InitSlot(unsigned int slot_id, unsigned int data_size);
+//int  SHM_ReadSlot(unsigned int slot_id, void* data, unsigned int data_size);
+//int  SHM_WriteSlot(unsigned int slot_id, void* data, unsigned int data_size);
+
+void Lock(SHM_Slot *slot);
+void Unlock(SHM_Slot *slot);
 
 

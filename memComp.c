@@ -1,25 +1,5 @@
 /* Crea una zona de memoria común, escribe en ella y la borra */
 #include "memComp.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <pthread.h>
-#include <semaphore.h>
-#include <sys/mman.h>
-#include <sys/stat.h>
-#include <fcntl.h>
-
-#define MAX_SLOTS 300
-
-typedef struct
-{
-    unsigned int payloadSize;
-    pthread_mutex_t mutex;
-    //void* dato;
-    sem_t *semaforo;
-
-}SHM_Slot;
-
 
 SHM_Slot *SlotsArray[MAX_SLOTS];
 
@@ -39,7 +19,7 @@ int SHM_InitSlot(unsigned int slot_id, unsigned int data_size)
 
     /*Inicializo semaforo y mutex del slot*/
     char id[3];
-    itoa(slot_id,id,10);
+    sprintf(id,"%d",slot_id);
     slot->semaforo = sem_open(strcat("sem_slot",id), O_CREAT , S_IRWXU, 0);
     pthread_mutex_init(&(slot->mutex),NULL); //danger!
 
@@ -51,7 +31,7 @@ int SHM_InitSlot(unsigned int slot_id, unsigned int data_size)
         printf("Error al crear memoria compartida\n");
     }
 
-    ftruncate(shm_fd, sizeof(SHM_Slot) + data_size);
+    ftruncate(shm_fd, (sizeof(SHM_Slot) + data_size));
     Lock(&slot);
     slot = mmap(0,sizeof(SHM_Slot) + data_size, PROT_READ | PROT_WRITE, MAP_SHARED, shm_fd,0);
     slot->payloadSize = data_size;
