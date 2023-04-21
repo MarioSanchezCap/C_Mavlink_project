@@ -1,126 +1,82 @@
 /* Crea una zona de memoria común, escribe en ella y la borra */
+#include "memComp.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "memComp.h"
+#include <string.h>
 #include <pthread.h>
+#include <semaphore.h>
+#include <sys/mman.h>
+#include <sys/stat.h>
+#include <fcntl.h>
 
-#define MAX 100
+#define MAX_SLOTS 300
 
 typedef struct
 {
-    int id;
+    unsigned int payloadSize;
     pthread_mutex_t mutex;
-    void* dato;
+    //void* dato;
     sem_t *semaforo;
 
 }SHM_Slot;
 
-SHM_Slot *SlotsArray;
+
+SHM_Slot *SlotsArray[MAX_SLOTS];
 
 int shm_fd;
-
 pthread_mutex_t mutex_general;
 
 
-int SHM_InitSlot(unsigned int slot_id, unsigned int data_size)  ///??????????????????????????????????????????????
+int SHM_InitSlot(unsigned int slot_id, unsigned int data_size) 
 {
     SHM_Slot *slot;
 
-    int existe_InitSlot = -1;
+    if(slot_id >= 0 && slot_id < MAX_SLOTS)
+        slot = SlotsArray[slot_id];
+    else
+        printf("No existe slot seleccionado\n");
 
-    for(int i=0;i<sizeof(SlotsArray) - 1;i++)
-    {
-        if(SlotsArray[i]->id == slot_id)
-        {
-            //Existes
-            existe_InitSlot = i;
-        } 
-    }
 
-    if(existe_InitSlot != -1) //cuando existe
-    {
-        slot = SlotsArray[existe_InitSlot];
-    }
-    else //cuando no existe
-    {
-        pthread_mutex_lock(&mutex_general);
+    /*Inicializo semaforo y mutex del slot*/
+    char id[3];
+    itoa(slot_id,id,10);
+    slot->semaforo = sem_open(strcat("sem_slot",id), O_CREAT , S_IRWXU, 0);
+    pthread_mutex_init(&(slot->mutex),NULL); //danger!
 
-        SlotsArray[sizeof(SlotsArray)] = malloc(sizeof(SHM_Slot)+data_size);
-        if(slot == NULL){
-            printf("No hay memoria disponible");
-            exit(1);
-        }
 
-        slot = SlotsArray[sizeof(SlotsArray)];
-        slot->id = slot_id;
 
-        slot->semaforo = sem_open(strcat("sem_slot",slot_id), O_CREAT , S_IRWXU, 0);
-
-        pthread_mutex_init(&(slot->mutex),NULL); //danger!
-
-        pthread_mutex_unlock(&mutex_general);
-    }
-    
-    shm_fd = shm_open(strcat("/dev/shm/fd_slot",slot_id), O_CREAT | O_RDWR, 0666 ); 
+    shm_fd = shm_open(strcat("/dev/shm/fd_slot",id), O_CREAT | O_RDWR, 0666 ); 
 
     if (shm_fd == -1){
         printf("Error al crear memoria compartida\n");
     }
 
-    slot = mmap(0,sizeof(SHM_Slot) + data_size, PROT_READ | PROT_WRITE, shm_fd,0);
+    ftruncate(shm_fd, sizeof(SHM_Slot) + data_size);
+    Lock(&slot);
+    slot = mmap(0,sizeof(SHM_Slot) + data_size, PROT_READ | PROT_WRITE, MAP_SHARED, shm_fd,0);
+    slot->payloadSize = data_size;
+    SlotsArray[slot_id] = slot;
+    Unlock(&slot);
 
 }
 
 
+/* Inicializo a NULL todos mis Slots*/
 int SHM_Init(void)
 {
-
     pthread_mutex_init(&mutex_general,NULL);
-
-    SHM_Slot *slot;
-
-    for(int i=0;i<MAX - 1;i++)
-    {
-        dato->SlotsArray[i] = 0;
-        
-        slot = SlotsArray[i];
-
-        slot->id = i;
-
-        slot->semaforo = sem_open(strcat("sem_slot",slot_id), O_CREAT , S_IRWXU, 0);
-
-        pthread_mutex_init(&(slot->mutex),NULL); //danger!
-    }
-    
     
     pthread_mutex_lock(&mutex_general);
 
-    SlotsArray[sizeof(SlotsArray)] = malloc(sizeof(SHM_Slot)+data_size);
-    if(slot == NULL){
-        printf("No hay memoria disponible");
-        exit(1);
+    for(int i = 0;i < MAX_SLOTS - 1;i++)
+    {
+        SlotsArray[i] = NULL;
     }
-
-    slot = SlotsArray[sizeof(SlotsArray)];
-    slot->id = slot_id;
-
-    slot->semaforo = sem_open(strcat("sem_slot",slot_id), O_CREAT , S_IRWXU, 0);
-
-    pthread_mutex_init(&(slot->mutex),NULL); //danger!
 
     pthread_mutex_unlock(&mutex_general);
-    
-    
-    shm_fd = shm_open(strcat("/dev/shm/fd_slot",slot_id), O_CREAT | O_RDWR, 0666 ); 
-
-    if (shm_fd == -1){
-        printf("Error al crear memoria compartida\n");
-    }
-
-    slot = mmap(0,sizeof(SHM_Slot) + data_size, PROT_READ | PROT_WRITE, shm_fd,0);
-
 }
 
+/*
 
 int  SHM_ReadSlot(unsigned int slot_id, void* data, unsigned int data_size) //data_size??????????????????
 {
@@ -223,4 +179,17 @@ int  SHM_WriteSlot(unsigned int slot_id, void* data, unsigned int data_size)
     }
 
     return 0;   //DEVUELVE?????????????????????????????????
+}
+*/
+
+/* Lock mutex y semaforo del Slot */
+void Lock(SHM_Slot *slot){
+    pthread_mutex_lock(&(slot->mutex));
+    sem_wait(&(slot->semaforo));
+}
+
+/* Unlock mutex y semaforo del Slot */
+void Unlock(SHM_Slot *slot){
+    pthread_mutex_unlock(&(slot->mutex));
+    sem_post(&(slot->semaforo));
 }
