@@ -2,47 +2,124 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "memComp.h"
+#include <pthread.h>
+
+#define MAX 100
+
+typedef struct
+{
+    int id;
+    pthread_mutex_t mutex;
+    void* dato;
+    sem_t *semaforo;
+
+}SHM_Slot;
+
+SHM_Slot *SlotsArray;
+
+int shm_fd;
+
+pthread_mutex_t mutex_general;
 
 
-
-
-int SHM_Init(void){
-
-    fd1 = shm_open("/memComp_1", O_CREAT | O_RDWR, 0666 );  //PERMISOS?????????
-
-    if (fd1 == -1){
-        printf("Error al crear memoria compartida\n");
-    }
-
-    semid1 = sem_open("sem1", O_CREAT, 0700, 0);    //PERMISOS?????????
-
-
-
-    fd2 = shm_open("/memComp_2", O_CREAT | O_RDWR, 0666 );   //PERMISOS?????????
-
-    if (fd2 == -1){
-        printf("Error al crear memoria compartida\n");
-    }
-
-    semid2 = sem_open("sem2", O_CREAT, 0700, 0);    //PERMISOS?????????
-
-    return 0;   //DEVUELVE?????????????????????????????????
-}
-
-
-
-
-
-
-/*
 int SHM_InitSlot(unsigned int slot_id, unsigned int data_size)  ///??????????????????????????????????????????????
 {
+    SHM_Slot *slot;
+
+    int existe_InitSlot = -1;
+
+    for(int i=0;i<sizeof(SlotsArray) - 1;i++)
+    {
+        if(SlotsArray[i]->id == slot_id)
+        {
+            //Existes
+            existe_InitSlot = i;
+        } 
+    }
+
+    if(existe_InitSlot != -1) //cuando existe
+    {
+        slot = SlotsArray[existe_InitSlot];
+    }
+    else //cuando no existe
+    {
+        pthread_mutex_lock(&mutex_general);
+
+        SlotsArray[sizeof(SlotsArray)] = malloc(sizeof(SHM_Slot)+data_size);
+        if(slot == NULL){
+            printf("No hay memoria disponible");
+            exit(1);
+        }
+
+        slot = SlotsArray[sizeof(SlotsArray)];
+        slot->id = slot_id;
+
+        slot->semaforo = sem_open(strcat("sem_slot",slot_id), O_CREAT , S_IRWXU, 0);
+
+        pthread_mutex_init(&(slot->mutex),NULL); //danger!
+
+        pthread_mutex_unlock(&mutex_general);
+    }
     
-    
+    shm_fd = shm_open(strcat("/dev/shm/fd_slot",slot_id), O_CREAT | O_RDWR, 0666 ); 
+
+    if (shm_fd == -1){
+        printf("Error al crear memoria compartida\n");
+    }
+
+    slot = mmap(0,sizeof(SHM_Slot) + data_size, PROT_READ | PROT_WRITE, shm_fd,0);
+
 }
 
-*/
 
+int SHM_Init(void)
+{
+
+    pthread_mutex_init(&mutex_general,NULL);
+
+    SHM_Slot *slot;
+
+    for(int i=0;i<MAX - 1;i++)
+    {
+        dato->SlotsArray[i] = 0;
+        
+        slot = SlotsArray[i];
+
+        slot->id = i;
+
+        slot->semaforo = sem_open(strcat("sem_slot",slot_id), O_CREAT , S_IRWXU, 0);
+
+        pthread_mutex_init(&(slot->mutex),NULL); //danger!
+    }
+    
+    
+    pthread_mutex_lock(&mutex_general);
+
+    SlotsArray[sizeof(SlotsArray)] = malloc(sizeof(SHM_Slot)+data_size);
+    if(slot == NULL){
+        printf("No hay memoria disponible");
+        exit(1);
+    }
+
+    slot = SlotsArray[sizeof(SlotsArray)];
+    slot->id = slot_id;
+
+    slot->semaforo = sem_open(strcat("sem_slot",slot_id), O_CREAT , S_IRWXU, 0);
+
+    pthread_mutex_init(&(slot->mutex),NULL); //danger!
+
+    pthread_mutex_unlock(&mutex_general);
+    
+    
+    shm_fd = shm_open(strcat("/dev/shm/fd_slot",slot_id), O_CREAT | O_RDWR, 0666 ); 
+
+    if (shm_fd == -1){
+        printf("Error al crear memoria compartida\n");
+    }
+
+    slot = mmap(0,sizeof(SHM_Slot) + data_size, PROT_READ | PROT_WRITE, shm_fd,0);
+
+}
 
 
 int  SHM_ReadSlot(unsigned int slot_id, void* data, unsigned int data_size) //data_size??????????????????
