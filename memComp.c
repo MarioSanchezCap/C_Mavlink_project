@@ -10,22 +10,30 @@ pthread_mutex_t mutex_general;
 int SHM_InitSlot(unsigned int slot_id, unsigned int data_size) 
 {
     SHM_Slot *slot;
+    SHM_Slot a;
 
-    if(slot_id >= 0 && slot_id < MAX_SLOTS)
-        slot = SlotsArray[slot_id];
-    else
+    if(slot_id >= 0 && slot_id < MAX_SLOTS){
+        if(SlotsArray[slot_id]!=NULL){
+            slot = SlotsArray[slot_id];
+        }else{
+            slot=&a;
+            SlotsArray[slot_id]=slot;
+        }
+    }else{
         printf("No existe slot seleccionado\n");
+        return -1;
+    }
 
 
     /*Inicializo semaforo y mutex del slot*/
     char id[3];
     sprintf(id,"%d",slot_id);
-    slot->semaforo = sem_open(strcat("sem_slot",id), O_CREAT , S_IRWXU, 0);
-    pthread_mutex_init(&(slot->mutex),NULL); //danger!
+    slot->semaforo = sem_open(strcat("/dev/shm/sem_slot",id), O_CREAT , S_IRWXU, 0);
+    pthread_mutex_init(&(slot->mutex),NULL); //danger!----
 
 
 
-    shm_fd = shm_open(strcat("/dev/shm/fd_slot",id), O_CREAT | O_RDWR, 0666 ); 
+    shm_fd = shm_open(strcat("fd_slot",id), O_CREAT | O_RDWR, 0666 ); 
 
     if (shm_fd == -1){
         printf("Error al crear memoria compartida\n");
@@ -33,17 +41,13 @@ int SHM_InitSlot(unsigned int slot_id, unsigned int data_size)
 
     ftruncate(shm_fd, (sizeof(SHM_Slot) + data_size));
 
-    //Lock(slot);
-    pthread_mutex_lock(&(slot->mutex));
-    sem_wait(slot->semaforo);
+    Lock(slot);
 
     slot = mmap(0,sizeof(SHM_Slot) + data_size, PROT_READ | PROT_WRITE, MAP_SHARED, shm_fd,0);
     slot->payloadSize = data_size;
     SlotsArray[slot_id] = slot;
 
-    //Unlock(slot);
-    pthread_mutex_unlock(&(slot->mutex));
-    sem_post(slot->semaforo);
+    Unlock(slot);
 
 }
 
@@ -169,15 +173,14 @@ int  SHM_WriteSlot(unsigned int slot_id, void* data, unsigned int data_size)
 }
 */
 
-/* Lock mutex y semaforo del Slot *//*
+// Lock mutex y semaforo del Slot *//*
 void Lock(SHM_Slot *slot){
     pthread_mutex_lock(&(slot->mutex));
     sem_wait(slot->semaforo);
 }
 
-/* Unlock mutex y semaforo del Slot *//*
+ //Unlock mutex y semaforo del Slot
 void Unlock(SHM_Slot *slot){
     pthread_mutex_unlock(&(slot->mutex));
     sem_post(slot->semaforo);
 }
-*/

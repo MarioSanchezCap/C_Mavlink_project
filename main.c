@@ -33,7 +33,7 @@ int main(){
 
 
 SHM_Init();
-
+printf("hola");
 
 
 
