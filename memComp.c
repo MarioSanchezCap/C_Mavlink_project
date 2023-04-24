@@ -32,11 +32,18 @@ int SHM_InitSlot(unsigned int slot_id, unsigned int data_size)
     }
 
     ftruncate(shm_fd, (sizeof(SHM_Slot) + data_size));
-    Lock(&slot);
+
+    //Lock(slot);
+    pthread_mutex_lock(&(slot->mutex));
+    sem_wait(slot->semaforo);
+
     slot = mmap(0,sizeof(SHM_Slot) + data_size, PROT_READ | PROT_WRITE, MAP_SHARED, shm_fd,0);
     slot->payloadSize = data_size;
     SlotsArray[slot_id] = slot;
-    Unlock(&slot);
+
+    //Unlock(slot);
+    pthread_mutex_unlock(&(slot->mutex));
+    sem_post(slot->semaforo);
 
 }
 
@@ -162,14 +169,15 @@ int  SHM_WriteSlot(unsigned int slot_id, void* data, unsigned int data_size)
 }
 */
 
-/* Lock mutex y semaforo del Slot */
+/* Lock mutex y semaforo del Slot *//*
 void Lock(SHM_Slot *slot){
     pthread_mutex_lock(&(slot->mutex));
-    sem_wait(&(slot->semaforo));
+    sem_wait(slot->semaforo);
 }
 
-/* Unlock mutex y semaforo del Slot */
+/* Unlock mutex y semaforo del Slot *//*
 void Unlock(SHM_Slot *slot){
     pthread_mutex_unlock(&(slot->mutex));
-    sem_post(&(slot->semaforo));
+    sem_post(slot->semaforo);
 }
+*/
