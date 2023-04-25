@@ -15,6 +15,7 @@ typedef struct
 {
 unsigned int payloadSize;
 pthread_mutex_t mutex;
+sem_t *semaforo;
 }SHM_Slot;
 
 /*Funciones*/

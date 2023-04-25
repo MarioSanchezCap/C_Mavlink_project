@@ -5,8 +5,6 @@
 SHM_Slot *SlotsArray[MAX_SLOTS];
 int shm_fd;
 pthread_mutex_t mutex_general;
-sem_t *semaforo = NULL;
-
 
 int SHM_InitSlot(unsigned int slot_id, unsigned int data_size)
 
@@ -31,7 +29,7 @@ return -1;
 char id[30];
 sprintf(id,"/sem_slot%d",slot_id);
 
-semaforo = sem_open(id, O_CREAT | O_EXCL, 0644, 1);
+slot->semaforo = sem_open(id, O_CREAT | O_EXCL, 0644, 1);
 
 sem = sem_open(id,0);
 
