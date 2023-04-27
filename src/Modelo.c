@@ -23,8 +23,6 @@ int main()
 {
 
 SHM_Init();
-
-
 /*
 posicion.x = 99999.0;
 posicion.y = 48.0;
