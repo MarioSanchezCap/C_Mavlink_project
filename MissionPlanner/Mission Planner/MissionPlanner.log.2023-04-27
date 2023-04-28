@@ -1,0 +1,586 @@
+﻿2023-04-27 13:15:11,707  INFO MissionPlanner.MainV2 - Create FD (:0) [Base Thread]
+2023-04-27 13:15:11,714 DEBUG MissionPlanner.Program - Loaded: SkiaSharp, Version=2.80.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/SkiaSharp.dll (:0) [Base Thread]
+2023-04-27 13:15:11,723  INFO MissionPlanner.GCSViews.FlightData - Ctor Start (:0) [Base Thread]
+2023-04-27 13:15:11,730 DEBUG MissionPlanner.Program - Loaded: GeoUtility, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/GeoUtility.dll (:0) [Base Thread]
+2023-04-27 13:15:11,730 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2023-04-27 13:15:11,807  INFO MissionPlanner.Controls.HUD - Static HUD ctor (:0) [Base Thread]
+2023-04-27 13:15:11,813 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2023-04-27 13:15:11,819 DEBUG MissionPlanner.Program - Loaded: System.Resources.Extensions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/System.Resources.Extensions.dll (:0) [Base Thread]
+2023-04-27 13:15:11,828 DEBUG MissionPlanner.Program - Loaded: System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/System.Memory.dll (:0) [Base Thread]
+2023-04-27 13:15:11,831 DEBUG MissionPlanner.Program - Loaded: System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/System.Runtime.CompilerServices.Unsafe.dll (:0) [Base Thread]
+2023-04-27 13:15:11,852 DEBUG MissionPlanner.Program - Loaded: System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/System.Numerics.Vectors.dll (:0) [Base Thread]
+2023-04-27 13:15:11,921  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2023-04-27 13:15:11,923  INFO MissionPlanner.Controls.HUD - Instance HUD ctor (:0) [Base Thread]
+2023-04-27 13:15:12,040 DEBUG MissionPlanner.Program - Loaded: Microsoft.GeneratedCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (:0) [Base Thread]
+2023-04-27 13:15:12,521 DEBUG MissionPlanner.Program - Loaded: ZedGraph.resources, Version=5.1.5.0, Culture=es, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/es/ZedGraph.resources.dll (:0) [Base Thread]
+2023-04-27 13:15:12,790  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2023-04-27 13:15:12,913 DEBUG MissionPlanner.Program - Loaded: Microsoft.Extensions.Caching.Memory, Version=3.1.13.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/Microsoft.Extensions.Caching.Memory.dll (:0) [Base Thread]
+2023-04-27 13:15:12,914 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2023-04-27 13:15:12,915 DEBUG MissionPlanner.Program - Loaded: Microsoft.Extensions.Caching.Abstractions, Version=3.1.13.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/Microsoft.Extensions.Caching.Abstractions.dll (:0) [Base Thread]
+2023-04-27 13:15:12,916 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2023-04-27 13:15:12,919 DEBUG MissionPlanner.Program - Loaded: Microsoft.Extensions.Options, Version=3.1.13.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/Microsoft.Extensions.Options.dll (:0) [Base Thread]
+2023-04-27 13:15:12,920 DEBUG MissionPlanner.Program - Loaded: Microsoft.Extensions.Logging.Abstractions, Version=3.1.13.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/Microsoft.Extensions.Logging.Abstractions.dll (:0) [Base Thread]
+2023-04-27 13:15:12,922 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2023-04-27 13:15:12,927 DEBUG MissionPlanner.Program - Loaded: Microsoft.Extensions.Primitives, Version=3.1.13.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/Microsoft.Extensions.Primitives.dll (:0) [Base Thread]
+2023-04-27 13:15:12,929 DEBUG MissionPlanner.Program - Loaded: System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from /usr/lib/mono/gac/System.Xml.Linq/4.0.0.0__b77a5c561934e089/System.Xml.Linq.dll (:0) [Base Thread]
+2023-04-27 13:15:13,263 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2023-04-27 13:15:13,432  INFO MissionPlanner.GCSViews.FlightData - Components Done (:0) [Base Thread]
+2023-04-27 13:15:13,443  INFO MissionPlanner.GCSViews.FlightData - Tunning Graph Settings (:0) [Base Thread]
+2023-04-27 13:15:13,471  INFO MissionPlanner.GCSViews.FlightData - HUD Settings (:0) [Base Thread]
+2023-04-27 13:15:13,482  INFO MissionPlanner.GCSViews.FlightData - Graph Setup (:0) [Base Thread]
+2023-04-27 13:15:13,486  INFO MissionPlanner.GCSViews.FlightData - Map Setup (:0) [Base Thread]
+2023-04-27 13:15:13,492 DEBUG MissionPlanner.MAVLinkInterface - Subscribed .ctor at offset 0 in file:line:column <filename unknown>:0:0 FlightData_ParentChanged FlightData System.EventHandler (:0) [Base Thread]
+2023-04-27 13:15:13,494  INFO MissionPlanner.MainV2 - Create FP (:0) [Base Thread]
+2023-04-27 13:15:13,716  INFO MissionPlanner.GCSViews.FlightPlanner - Loading wp params (:0) [Base Thread]
+2023-04-27 13:15:13,720  INFO MissionPlanner.GCSViews.FlightPlanner - param WP_RADIUS 30 (:0) [Base Thread]
+2023-04-27 13:15:13,721  INFO MissionPlanner.GCSViews.FlightPlanner - param LOITER_RADIUS 45 (:0) [Base Thread]
+2023-04-27 13:15:13,728  INFO MissionPlanner.GCSViews.FlightPlanner - Reading MAV_CMD for ArduPlane (:0) [Base Thread]
+2023-04-27 13:15:13,740  INFO MissionPlanner.GCSViews.FlightPlanner - Command item count 0 orig list 47 (:0) [Base Thread]
+2023-04-27 13:15:13,805  INFO MissionPlanner.GCSViews.FlightPlanner - Reading MAV_CMD for ArduPlane (:0) [Base Thread]
+2023-04-27 13:15:13,806  INFO MissionPlanner.GCSViews.FlightPlanner - Command item count 0 orig list 47 (:0) [Base Thread]
+2023-04-27 13:15:13,814  INFO MissionPlanner.GCSViews.FlightPlanner - updateMapType invoke req? False (:0) [Base Thread]
+2023-04-27 13:15:13,827  INFO MissionPlanner.MainV2 - Create SIM (:0) [Base Thread]
+2023-04-27 13:15:13,898  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2023-04-27 13:15:13,975  INFO MissionPlanner.MAVLinkInterface - Subscribed .ctor at offset 0 in file:line:column <filename unknown>:0:0 comPort_MavChanged MainV2 System.EventHandler (:0) [Base Thread]
+2023-04-27 13:15:13,976  INFO MissionPlanner.MainV2 - Saving config (:0) [Base Thread]
+2023-04-27 13:15:14,020 DEBUG MissionPlanner.Program - Loaded: LibVLC.NET, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/LibVLC.NET.dll (:0) [Base Thread]
+2023-04-27 13:15:14,022 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2023-04-27 13:15:14,029 DEBUG MissionPlanner.Program - Loaded: DroneCAN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/DroneCAN.dll (:0) [Base Thread]
+2023-04-27 13:15:14,031 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2023-04-27 13:15:14,033 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2023-04-27 13:15:14,069  INFO MissionPlanner.MainV2 - Load Pluggins (:0) [Base Thread]
+2023-04-27 13:15:14,072  INFO MissionPlanner.Plugin.PluginLoader - Plugin path: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/ (:0) [Base Thread]
+2023-04-27 13:15:14,075 DEBUG MissionPlanner.Program - Loaded: System.CodeDom, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/System.CodeDom.dll (:0) [Thread Pool Worker]
+2023-04-27 13:15:14,076 DEBUG MissionPlanner.Program - Loaded: NodaTime.Serialization.JsonNet, Version=3.0.0.0, Culture=neutral, PublicKeyToken=4226afe0d9b296d1 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/NodaTime.Serialization.JsonNet.dll (:0) [Base Thread]
+2023-04-27 13:15:14,078  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/NodaTime.Serialization.JsonNet.dll (:0) [Base Thread]
+2023-04-27 13:15:14,078  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example16-donate.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:14,085 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2023-04-27 13:15:14,105 DEBUG MissionPlanner.Program - Loaded: NodaTime, Version=3.0.0.0, Culture=neutral, PublicKeyToken=4226afe0d9b296d1 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/NodaTime.dll (:0) [Base Thread]
+2023-04-27 13:15:14,108 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2023-04-27 13:15:14,111  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/NodaTime.Serialization.JsonNet.dll time 0.035758 s (:0) [Base Thread]
+2023-04-27 13:15:14,115 DEBUG MissionPlanner.Program - Loaded: Microsoft.CodeAnalysis, Version=3.9.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/Microsoft.CodeAnalysis.dll (:0) [Thread Pool Worker]
+2023-04-27 13:15:14,117 DEBUG MissionPlanner.Program - Loaded: AltitudeAngelWings, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/AltitudeAngelWings.dll (:0) [Base Thread]
+2023-04-27 13:15:14,121  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/AltitudeAngelWings.dll (:0) [Base Thread]
+2023-04-27 13:15:14,124 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2023-04-27 13:15:14,124 DEBUG MissionPlanner.Program - Loaded: System.Reflection.Metadata, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/System.Reflection.Metadata.dll (:0) [Thread Pool Worker]
+2023-04-27 13:15:14,127 DEBUG MissionPlanner.Program - Loaded: GeoJSON.Net, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/GeoJSON.Net.dll (:0) [Base Thread]
+2023-04-27 13:15:14,132 DEBUG MissionPlanner.Program - Loaded: Flurl.Http, Version=3.2.0.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/Flurl.Http.dll (:0) [Base Thread]
+2023-04-27 13:15:14,138 DEBUG MissionPlanner.Program - Loaded: System.Collections.Immutable, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/System.Collections.Immutable.dll (:0) [Thread Pool Worker]
+2023-04-27 13:15:14,138 DEBUG MissionPlanner.Program - Loaded: Polly, Version=7.0.0.0, Culture=neutral, PublicKeyToken=c8a3ffc3f8f825cc from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/Polly.dll (:0) [Base Thread]
+2023-04-27 13:15:14,141 DEBUG MissionPlanner.Program - Loaded: System.Text.Encoding.CodePages, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/System.Text.Encoding.CodePages.dll (:0) [Thread Pool Worker]
+2023-04-27 13:15:14,143 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Thread Pool Worker]
+2023-04-27 13:15:14,144 DEBUG MissionPlanner.Program - Loaded: Microsoft.CodeAnalysis.CSharp, Version=3.9.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/Microsoft.CodeAnalysis.CSharp.dll (:0) [Thread Pool Worker]
+2023-04-27 13:15:14,144  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/AltitudeAngelWings.dll time 0.028498 s (:0) [Base Thread]
+2023-04-27 13:15:14,149 DEBUG MissionPlanner.Program - Loaded: opendroneid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/opendroneid.dll (:0) [Base Thread]
+2023-04-27 13:15:14,152  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/opendroneid.dll (:0) [Base Thread]
+2023-04-27 13:15:14,156 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Thread Pool Worker]
+2023-04-27 13:15:14,208 DEBUG MissionPlanner.Program - Loaded: example16-donate, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2023-04-27 13:15:14,217 DEBUG MissionPlanner.Program - Loaded: Anonymously Hosted DynamicMethods Assembly, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null (:0) [Base Thread]
+2023-04-27 13:15:14,234  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init Donate 0.10 by Example (:0) [Thread Pool Worker]
+2023-04-27 13:15:14,239  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example16-donate.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:14,240 DEBUG MissionPlanner.Program - Loaded: Bulb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/Bulb.dll (:0) [Base Thread]
+2023-04-27 13:15:14,324  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init Open Drone ID 0.05 by Steven Borenstein, updated by BlueMark Innovations BV (:0) [Base Thread]
+2023-04-27 13:15:14,326  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/opendroneid.dll time 0.177397 s (:0) [Base Thread]
+2023-04-27 13:15:14,328 DEBUG MissionPlanner.Program - Loaded: MissionPlanner.Stats, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/MissionPlanner.Stats.dll (:0) [Base Thread]
+2023-04-27 13:15:14,331  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/MissionPlanner.Stats.dll (:0) [Base Thread]
+2023-04-27 13:15:14,337  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init Stats 0.1 by Michael Oborne (:0) [Base Thread]
+2023-04-27 13:15:14,339  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/MissionPlanner.Stats.dll time 0.01104 s (:0) [Base Thread]
+2023-04-27 13:15:14,341 DEBUG MissionPlanner.Program - Loaded: MarkdownSharp, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/MarkdownSharp.dll (:0) [Base Thread]
+2023-04-27 13:15:14,344  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/MarkdownSharp.dll (:0) [Base Thread]
+2023-04-27 13:15:14,345  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/MarkdownSharp.dll time 0.004652 s (:0) [Base Thread]
+2023-04-27 13:15:14,347 DEBUG MissionPlanner.Program - Loaded: FaceMap, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/FaceMap.dll (:0) [Base Thread]
+2023-04-27 13:15:14,349  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/FaceMap.dll (:0) [Base Thread]
+2023-04-27 13:15:14,352  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init Face Map 1.0.0.0 by Jonathan Wang (:0) [Base Thread]
+2023-04-27 13:15:14,356  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/FaceMap.dll time 0.009603 s (:0) [Base Thread]
+2023-04-27 13:15:14,359 DEBUG MissionPlanner.Program - Loaded: Polly, Version=7.0.0.0, Culture=neutral, PublicKeyToken=c8a3ffc3f8f825cc from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/Polly.dll (:0) [Base Thread]
+2023-04-27 13:15:14,361  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/Polly.dll (:0) [Base Thread]
+2023-04-27 13:15:14,383  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/Polly.dll time 0.024037 s (:0) [Base Thread]
+2023-04-27 13:15:14,386 DEBUG MissionPlanner.Program - Loaded: MissionPlanner.SimpleGrid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/MissionPlanner.SimpleGrid.dll (:0) [Base Thread]
+2023-04-27 13:15:14,389  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/MissionPlanner.SimpleGrid.dll (:0) [Base Thread]
+2023-04-27 13:15:14,392  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init SimpleGrid 0.1 by Michael Oborne (:0) [Base Thread]
+2023-04-27 13:15:14,394  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/MissionPlanner.SimpleGrid.dll time 0.007537 s (:0) [Base Thread]
+2023-04-27 13:15:14,399 DEBUG MissionPlanner.Program - Loaded: Bulb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/Bulb.dll (:0) [Base Thread]
+2023-04-27 13:15:14,402  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/Bulb.dll (:0) [Base Thread]
+2023-04-27 13:15:14,404  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/Bulb.dll time 0.005731 s (:0) [Base Thread]
+2023-04-27 13:15:14,406 DEBUG MissionPlanner.Program - Loaded: NodaTime, Version=3.0.0.0, Culture=neutral, PublicKeyToken=4226afe0d9b296d1 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/NodaTime.dll (:0) [Base Thread]
+2023-04-27 13:15:14,408  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/NodaTime.dll (:0) [Base Thread]
+2023-04-27 13:15:14,417  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/NodaTime.dll time 0.011143 s (:0) [Base Thread]
+2023-04-27 13:15:14,419 DEBUG MissionPlanner.Program - Loaded: IndexRange, Version=1.0.2.0, Culture=neutral, PublicKeyToken=35e6a3c4212514c6 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/IndexRange.dll (:0) [Base Thread]
+2023-04-27 13:15:14,422  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/IndexRange.dll (:0) [Base Thread]
+2023-04-27 13:15:14,424  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/IndexRange.dll time 0.004706 s (:0) [Base Thread]
+2023-04-27 13:15:14,426 DEBUG MissionPlanner.Program - Loaded: MavlinkMessagePlugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/MavlinkMessagePlugin.dll (:0) [Base Thread]
+2023-04-27 13:15:14,428  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/MavlinkMessagePlugin.dll (:0) [Base Thread]
+2023-04-27 13:15:14,442  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init MavlinkMessagePlugin 0.1 by Michael Oborne (:0) [Base Thread]
+2023-04-27 13:15:14,444  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/MavlinkMessagePlugin.dll time 0.018197 s (:0) [Base Thread]
+2023-04-27 13:15:14,445 DEBUG MissionPlanner.Program - Loaded: DotSpatial.Topology, Version=1.9.0.0, Culture=neutral, PublicKeyToken=a66b5e9434ca3671 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/DotSpatial.Topology.dll (:0) [Base Thread]
+2023-04-27 13:15:14,447  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/DotSpatial.Topology.dll (:0) [Base Thread]
+2023-04-27 13:15:14,448 DEBUG MissionPlanner.Program - Loaded: DotSpatial.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/DotSpatial.Serialization.dll (:0) [Base Thread]
+2023-04-27 13:15:14,450 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2023-04-27 13:15:14,457  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/DotSpatial.Topology.dll time 0.012028 s (:0) [Base Thread]
+2023-04-27 13:15:14,459 DEBUG MissionPlanner.Program - Loaded: TrackerHome, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/TrackerHome.dll (:0) [Base Thread]
+2023-04-27 13:15:14,464  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/TrackerHome.dll (:0) [Base Thread]
+2023-04-27 13:15:14,469  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init GPS Tracker Home Plugin 1.0 by Will Bryan (:0) [Base Thread]
+2023-04-27 13:15:14,472  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/TrackerHome.dll time 0.013086 s (:0) [Base Thread]
+2023-04-27 13:15:14,474 DEBUG MissionPlanner.Program - Loaded: AltitudeAngelWings.Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/AltitudeAngelWings.Plugin.dll (:0) [Base Thread]
+2023-04-27 13:15:14,476  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/AltitudeAngelWings.Plugin.dll (:0) [Base Thread]
+2023-04-27 13:15:14,481  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init Altitude Angel 1.0.0.0 by Altitude Angel (:0) [Base Thread]
+2023-04-27 13:15:14,484  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/AltitudeAngelWings.Plugin.dll time 0.010227 s (:0) [Base Thread]
+2023-04-27 13:15:14,486 DEBUG MissionPlanner.Program - Loaded: MissionPlanner.Gridv2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/MissionPlanner.Gridv2.dll (:0) [Base Thread]
+2023-04-27 13:15:14,488  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/MissionPlanner.Gridv2.dll (:0) [Base Thread]
+2023-04-27 13:15:14,490  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init Grid 0.1 by Michael Oborne (:0) [Base Thread]
+2023-04-27 13:15:14,492  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/MissionPlanner.Gridv2.dll time 0.006886 s (:0) [Base Thread]
+2023-04-27 13:15:14,495 DEBUG MissionPlanner.Program - Loaded: Dowding, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/Dowding.dll (:0) [Base Thread]
+2023-04-27 13:15:14,498  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/Dowding.dll (:0) [Base Thread]
+2023-04-27 13:15:14,502 DEBUG MissionPlanner.Program - Loaded: WebSocket4Net, Version=0.15.2.11, Culture=neutral, PublicKeyToken=eb4e154b696bf72a from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/WebSocket4Net.dll (:0) [Base Thread]
+2023-04-27 13:15:14,504 DEBUG MissionPlanner.Program - Loaded: System.Runtime, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from /usr/lib/mono/4.5/Facades/System.Runtime.dll (:0) [Base Thread]
+2023-04-27 13:15:14,506  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init Dowding 0.1 by Michael Oborne (:0) [Base Thread]
+2023-04-27 13:15:14,508 DEBUG MissionPlanner.Program - Loaded: Onvif, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/Onvif.dll (:0) [Base Thread]
+2023-04-27 13:15:14,511 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2023-04-27 13:15:14,513 DEBUG MissionPlanner.Program - Loaded: MissionPlanner.WebAPIs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/MissionPlanner.WebAPIs.dll (:0) [Base Thread]
+2023-04-27 13:15:14,515 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2023-04-27 13:15:14,517  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/Dowding.dll time 0.022022 s (:0) [Base Thread]
+2023-04-27 13:15:14,521 DEBUG MissionPlanner.Program - Loaded: OSDConfigurator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/OSDConfigurator.dll (:0) [Base Thread]
+2023-04-27 13:15:14,528 DEBUG MissionPlanner.Program - Loaded: netDxf, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/netDxf.dll (:0) [Base Thread]
+2023-04-27 13:15:14,532 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2023-04-27 13:15:14,537 DEBUG MissionPlanner.Program - Loaded: JetBrains.Profiler.SelfApi, Version=2.0.2.0, Culture=neutral, PublicKeyToken=1010a0d8d6380325 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/JetBrains.Profiler.SelfApi.dll (:0) [Base Thread]
+2023-04-27 13:15:14,539 DEBUG MissionPlanner.Program - Loaded: Microsoft.Scripting, Version=1.2.0.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/Microsoft.Scripting.dll (:0) [Base Thread]
+2023-04-27 13:15:14,543  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init Grid 1.3.8479.20532 by Michael Oborne (:0) [Base Thread]
+2023-04-27 13:15:14,551 DEBUG MissionPlanner.Program - Loaded: Accord.Imaging, Version=3.8.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/Accord.Imaging.dll (:0) [Base Thread]
+2023-04-27 13:15:14,553 DEBUG MissionPlanner.Program - Loaded: Accord, Version=3.8.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/Accord.dll (:0) [Base Thread]
+2023-04-27 13:15:14,555 DEBUG MissionPlanner.Program - Loaded: Renci.SshNet, Version=2020.0.2.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/Renci.SshNet.dll (:0) [Base Thread]
+2023-04-27 13:15:14,557 DEBUG MissionPlanner.Program - Loaded: Xamarin.Forms.Platform.WinForms, Version=4.1.0.1, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/Xamarin.Forms.Platform.WinForms.dll (:0) [Base Thread]
+2023-04-27 13:15:14,560 DEBUG MissionPlanner.Program - Loaded: px4uploader, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/px4uploader.dll (:0) [Base Thread]
+2023-04-27 13:15:14,563 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2023-04-27 13:15:14,576 DEBUG MissionPlanner.Program - Loaded: AviFile, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/AviFile.dll (:0) [Base Thread]
+2023-04-27 13:15:14,579 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2023-04-27 13:15:14,586 DEBUG MissionPlanner.Program - Loaded: MissionPlanner.Antenna, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/MissionPlanner.Antenna.dll (:0) [Base Thread]
+2023-04-27 13:15:14,616 ERROR MissionPlanner.Plugin.PluginLoader - System.DllNotFoundException: setupapi.dll assembly:<unknown assembly> type:<unknown type> member:(null)
+  at (wrapper managed-to-native) TrackerHomeGPS.Device.SetupDiGetClassDevs(System.Guid&,intptr,intptr,uint)
+  at TrackerHomeGPS.Device.DevicePresent (System.Guid g) [0x00017] in <1bca10dde3cd494b89695b8c550e0b37>:0 
+  at TrackerHomeGPS.GarminUSBGPS.DevicePresent () [0x00000] in <1bca10dde3cd494b89695b8c550e0b37>:0 
+  at TrackerHome.getDevice () [0x00000] in <1bca10dde3cd494b89695b8c550e0b37>:0 
+  at TrackerHome.Loaded () [0x00115] in <1bca10dde3cd494b89695b8c550e0b37>:0 
+  at MissionPlanner.Plugin.PluginLoader.PluginInit () [0x0004c] in <e8e248aa3676432585c5b8693d4145ed>:0  (:0) [Base Thread]
+2023-04-27 13:15:14,646 DEBUG MissionPlanner.Program - Loaded: Mono.WebBrowser, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756 from /usr/lib/mono/gac/Mono.WebBrowser/4.0.0.0__0738eb9f132ed756/Mono.WebBrowser.dll (:0) [Base Thread]
+2023-04-27 13:15:14,675 DEBUG MissionPlanner.Program - Loaded: System.Runtime.Remoting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from /usr/lib/mono/gac/System.Runtime.Remoting/4.0.0.0__b77a5c561934e089/System.Runtime.Remoting.dll (:0) [Base Thread]
+2023-04-27 13:15:14,703 DEBUG MissionPlanner.Program - Loaded: MathParser.org-mXparser, Version=4.3.3.0, Culture=neutral, PublicKeyToken=0fbab7add73ed6e2 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/MathParser.org-mXparser.dll (:0) [Base Thread]
+2023-04-27 13:15:14,706 DEBUG MissionPlanner.Program - Loaded: Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/Core.dll (:0) [Base Thread]
+2023-04-27 13:15:14,708 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2023-04-27 13:15:14,711 DEBUG MissionPlanner.Program - Loaded: KMLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/KMLib.dll (:0) [Base Thread]
+2023-04-27 13:15:14,712 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2023-04-27 13:15:14,715 DEBUG MissionPlanner.Program - Loaded: alglibnet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/alglibnet.dll (:0) [Base Thread]
+2023-04-27 13:15:14,717 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2023-04-27 13:15:14,720 DEBUG MissionPlanner.Program - Loaded: BitMiracle.LibTiff.NetStandard, Version=2.4.584.0, Culture=neutral, PublicKeyToken=53879b3e20e7a7d6 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/BitMiracle.LibTiff.NetStandard.dll (:0) [Base Thread]
+2023-04-27 13:15:14,722 DEBUG MissionPlanner.Program - Loaded: System.Runtime, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from /usr/lib/mono/4.5/Facades/System.Runtime.dll (:0) [Base Thread]
+2023-04-27 13:15:14,724 DEBUG MissionPlanner.Program - Loaded: DotSpatial.Projections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/DotSpatial.Projections.dll (:0) [Base Thread]
+2023-04-27 13:15:14,726 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2023-04-27 13:15:14,730 DEBUG MissionPlanner.Program - Loaded: SharpDX.DirectInput, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/SharpDX.DirectInput.dll (:0) [Base Thread]
+2023-04-27 13:15:14,732 DEBUG MissionPlanner.Program - Loaded: SharpDX, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/SharpDX.dll (:0) [Base Thread]
+2023-04-27 13:15:14,749 DEBUG MissionPlanner.Program - Loaded: System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/System.Numerics.Vectors.dll (:0) [Base Thread]
+2023-04-27 13:15:14,758 DEBUG MissionPlanner.Program - Loaded: WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 from /usr/lib/mono/gac/WindowsBase/4.0.0.0__31bf3856ad364e35/WindowsBase.dll (:0) [Base Thread]
+2023-04-27 13:15:14,796 DEBUG MissionPlanner.Program - Loaded: GeoAPI, Version=1.7.5.0, Culture=neutral, PublicKeyToken=a1a0da7def465678 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/GeoAPI.dll (:0) [Base Thread]
+2023-04-27 13:15:14,804 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2023-04-27 13:15:14,856 DEBUG MissionPlanner.Program - Loaded: System.Runtime.Caching, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from /usr/lib/mono/gac/System.Runtime.Caching/4.0.0.0__b03f5f7f11d50a3a/System.Runtime.Caching.dll (:0) [Base Thread]
+2023-04-27 13:15:14,861 DEBUG MissionPlanner.Program - Loaded: System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from /usr/lib/mono/gac/System.Design/4.0.0.0__b03f5f7f11d50a3a/System.Design.dll (:0) [Base Thread]
+2023-04-27 13:15:14,877 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2023-04-27 13:15:14,880 DEBUG MissionPlanner.Program - Loaded: Microsoft.Extensions.DependencyInjection.Abstractions, Version=3.1.13.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/Microsoft.Extensions.DependencyInjection.Abstractions.dll (:0) [Base Thread]
+2023-04-27 13:15:14,882 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2023-04-27 13:15:14,897 DEBUG MissionPlanner.Program - Loaded: Flurl, Version=3.0.2.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/Flurl.dll (:0) [Base Thread]
+2023-04-27 13:15:14,908 DEBUG MissionPlanner.Program - Loaded: SuperSocket.ClientEngine, Version=0.10.0.0, Culture=neutral, PublicKeyToken=ee9af13f57f00acc from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/SuperSocket.ClientEngine.dll (:0) [Base Thread]
+2023-04-27 13:15:14,911 DEBUG MissionPlanner.Program - Loaded: System.Runtime.Extensions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from /usr/lib/mono/4.5/Facades/System.Runtime.Extensions.dll (:0) [Base Thread]
+2023-04-27 13:15:14,913 DEBUG MissionPlanner.Program - Loaded: System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from /usr/lib/mono/4.5/Facades/System.Collections.dll (:0) [Base Thread]
+2023-04-27 13:15:14,915 DEBUG MissionPlanner.Program - Loaded: System.Threading.Tasks, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from /usr/lib/mono/4.5/Facades/System.Threading.Tasks.dll (:0) [Base Thread]
+2023-04-27 13:15:14,917 DEBUG MissionPlanner.Program - Loaded: System.Net.Primitives, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from /usr/lib/mono/4.5/Facades/System.Net.Primitives.dll (:0) [Base Thread]
+2023-04-27 13:15:14,920 DEBUG MissionPlanner.Program - Loaded: System.Threading.Timer, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from /usr/lib/mono/4.5/Facades/System.Threading.Timer.dll (:0) [Base Thread]
+2023-04-27 13:15:14,923 DEBUG MissionPlanner.Program - Loaded: Onvif.Core, Version=2.2.2.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/Onvif.Core.dll (:0) [Base Thread]
+2023-04-27 13:15:14,925 DEBUG MissionPlanner.Program - Loaded: System.ServiceModel.Primitives, Version=4.8.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/System.ServiceModel.Primitives.dll (:0) [Base Thread]
+2023-04-27 13:15:14,933 DEBUG MissionPlanner.Program - Loaded: System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from /usr/lib/mono/gac/System.ServiceModel/4.0.0.0__b77a5c561934e089/System.ServiceModel.dll (:0) [Base Thread]
+2023-04-27 13:15:14,937 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2023-04-27 13:15:14,941 DEBUG MissionPlanner.Program - Loaded: RestSharp, Version=106.12.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/RestSharp.dll (:0) [Base Thread]
+2023-04-27 13:15:14,952 DEBUG MissionPlanner.Program - Loaded: Accord.Statistics, Version=3.8.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/Accord.Statistics.dll (:0) [Base Thread]
+2023-04-27 13:15:14,955 DEBUG MissionPlanner.Program - Loaded: Accord.Math, Version=3.8.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/Accord.Math.dll (:0) [Base Thread]
+2023-04-27 13:15:14,961 DEBUG MissionPlanner.Program - Loaded: System.ComponentModel.DataAnnotations, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 from /usr/lib/mono/gac/System.ComponentModel.DataAnnotations/4.0.0.0__31bf3856ad364e35/System.ComponentModel.DataAnnotations.dll (:0) [Base Thread]
+2023-04-27 13:15:14,973 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2023-04-27 13:15:15,088 DEBUG MissionPlanner.Program - Loaded: System.Configuration.ConfigurationManager, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/System.Configuration.ConfigurationManager.dll (:0) [Base Thread]
+2023-04-27 13:15:15,240  INFO MissionPlanner.MainV2 - Load Pluggins... Done (:0) [Base Thread]
+2023-04-27 13:15:15,242  INFO MissionPlanner.MainV2 - show FlightData (:0) [Base Thread]
+2023-04-27 13:15:15,255 DEBUG MissionPlanner.Utilities.Tracking - v=1&tid=UA-43098846-1&cid=ec5867be-f65d-4c6b-91c8-b9911e902167&t=appview&an=Mission+Planner&av=1.3.80&cd=MissionPlanner.GCSViews.FlightData&dp=MissionPlanner.GCSViews.FlightData&dt=FlightData&sc=start&ul=es-ES&sd=32-bits&sr=1920x892&cd1=Unix+5.19.0.40&cd4=4&z=320965862 (:0) [Thread Pool Worker]
+2023-04-27 13:15:15,255  INFO MissionPlanner.GCSViews.FlightData - Activate Called (:0) [Base Thread]
+2023-04-27 13:15:15,304  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2023-04-27 13:15:15,330  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2023-04-27 13:15:15,495  INFO MissionPlanner.Controls.HUD - OnHandleCreated Start (:0) [Base Thread]
+2023-04-27 13:15:15,752  INFO MissionPlanner.Controls.HUD - OnLoad Start (:0) [Base Thread]
+2023-04-27 13:15:15,762  INFO MissionPlanner.Controls.HUD - Vendor: Mesa/X.org (:0) [Base Thread]
+2023-04-27 13:15:15,771  INFO MissionPlanner.Controls.HUD - Version: 4.5 (Compatibility Profile) Mesa 22.2.5 (:0) [Base Thread]
+2023-04-27 13:15:15,780  INFO MissionPlanner.Controls.HUD - Device: llvmpipe (LLVM 15.0.6, 256 bits) (:0) [Base Thread]
+2023-04-27 13:15:15,789 DEBUG MissionPlanner.Controls.HUD - GetInteger (:0) [Base Thread]
+2023-04-27 13:15:15,800 DEBUG MissionPlanner.Controls.HUD - MatrixMode (:0) [Base Thread]
+2023-04-27 13:15:15,813 DEBUG MissionPlanner.Controls.HUD - LoadIdentity (:0) [Base Thread]
+2023-04-27 13:15:15,824 DEBUG MissionPlanner.Controls.HUD - Ortho (:0) [Base Thread]
+2023-04-27 13:15:15,834 DEBUG MissionPlanner.Controls.HUD - MatrixMode (:0) [Base Thread]
+2023-04-27 13:15:15,843 DEBUG MissionPlanner.Controls.HUD - LoadIdentity (:0) [Base Thread]
+2023-04-27 13:15:15,850 DEBUG MissionPlanner.Controls.HUD - PushAttrib (:0) [Base Thread]
+2023-04-27 13:15:15,857 DEBUG MissionPlanner.Controls.HUD - Disable (:0) [Base Thread]
+2023-04-27 13:15:15,867 DEBUG MissionPlanner.Controls.HUD - BlendFunc (:0) [Base Thread]
+2023-04-27 13:15:15,875 DEBUG MissionPlanner.Controls.HUD - Enable (:0) [Base Thread]
+2023-04-27 13:15:15,882 DEBUG MissionPlanner.Controls.HUD - Hint (:0) [Base Thread]
+2023-04-27 13:15:15,890 DEBUG MissionPlanner.Controls.HUD - Enable (:0) [Base Thread]
+2023-04-27 13:15:15,897  INFO MissionPlanner.Controls.HUD - OnLoad Done (:0) [Base Thread]
+2023-04-27 13:15:15,994 DEBUG MissionPlanner.Utilities.ParameterMetaDataRepositoryAPM - /home/tsvillaluenga/.local/share/Mission Planner/ParameterMetaData.xml (:0) [Base Thread]
+2023-04-27 13:15:15,997 DEBUG MissionPlanner.Utilities.ParameterMetaDataRepositoryAPM - /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner//ParameterMetaDataBackup.xml (:0) [Base Thread]
+2023-04-27 13:15:16,159  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2023-04-27 13:15:16,162  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2023-04-27 13:15:16,168  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2023-04-27 13:15:16,173  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2023-04-27 13:15:16,240  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example5-latencytracker.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:16,267 DEBUG MissionPlanner.Program - Loaded: example5-latencytracker, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2023-04-27 13:15:16,279  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example5-latencytracker.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:16,403  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2023-04-27 13:15:16,407  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2023-04-27 13:15:17,058  INFO MissionPlanner.MainV2 - Saving config (:0) [Base Thread]
+2023-04-27 13:15:17,060  INFO MissionPlanner.MainV2 - show FlightData... Done (:0) [Base Thread]
+2023-04-27 13:15:17,076  INFO MissionPlanner.MainV2 - start http (:0) [Base Thread]
+2023-04-27 13:15:17,079  INFO MissionPlanner.MainV2 - start joystick (:0) [Base Thread]
+2023-04-27 13:15:17,082  INFO MissionPlanner.Utilities.httpserver - Listening for client (:0) [motion jpg stream-network kml]
+2023-04-27 13:15:17,089 ERROR MissionPlanner.MainV2 - Mono: closing joystick thread (:0) [Base Thread]
+2023-04-27 13:15:17,091  INFO MissionPlanner.MainV2 - start serialreader (:0) [Base Thread]
+2023-04-27 13:15:17,113  INFO MissionPlanner.MainV2 - start plugin thread (:0) [Base Thread]
+2023-04-27 13:15:17,117 DEBUG MissionPlanner.Program - Loaded: tlogThumbnailHandler, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/tlogThumbnailHandler.dll (:0) [Thread Pool Worker]
+2023-04-27 13:15:17,117  INFO MissionPlanner.MainV2 - start AutoConnect (:0) [Base Thread]
+2023-04-27 13:15:17,127 DEBUG MissionPlanner.Program - Loaded: SharpCompress, Version=0.29.0.0, Culture=neutral, PublicKeyToken=afb0a02973931d96 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/SharpCompress.dll (:0) [Thread Pool Worker]
+2023-04-27 13:15:17,135 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Thread Pool Worker]
+2023-04-27 13:15:17,157 DEBUG MissionPlanner.Program - Loaded: DotNetZip, Version=1.16.0.0, Culture=neutral, PublicKeyToken=6583c7c814667745 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/DotNetZip.dll (:0) [Thread Pool Worker]
+2023-04-27 13:15:17,184 DEBUG MissionPlanner.Program - Loaded: I18N, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756 from /usr/lib/mono/gac/I18N/4.0.0.0__0738eb9f132ed756/I18N.dll (:0) [Thread Pool Worker]
+2023-04-27 13:15:17,189 DEBUG MissionPlanner.Program - Loaded: System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/System.Buffers.dll (:0) [Thread Pool Worker]
+2023-04-27 13:15:17,211 DEBUG MissionPlanner.Program - Loaded: I18N.West, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756 from /usr/lib/mono/gac/I18N.West/4.0.0.0__0738eb9f132ed756/I18N.West.dll (:0) [Thread Pool Worker]
+2023-04-27 13:15:17,372  INFO MissionPlanner.Utilities.AutoConnect - {
+  "Label": "Mavlink default port",
+  "Enabled": true,
+  "Port": 14550,
+  "Protocol": 1,
+  "Format": 0,
+  "Direction": 0,
+  "ConfigString": ""
+} (:0) [Base Thread]
+2023-04-27 13:15:17,376  INFO MissionPlanner.Utilities.AutoConnect - {
+  "Label": "Mavlink alt port",
+  "Enabled": true,
+  "Port": 14551,
+  "Protocol": 1,
+  "Format": 0,
+  "Direction": 0,
+  "ConfigString": ""
+} (:0) [Base Thread]
+2023-04-27 13:15:17,398  INFO MissionPlanner.Utilities.AutoConnect - {
+  "Label": "Video udp 5000 h264",
+  "Enabled": true,
+  "Port": 5000,
+  "Protocol": 1,
+  "Format": 1,
+  "Direction": 0,
+  "ConfigString": "udpsrc port=5000 buffer-size=90000 ! application/x-rtp,media=(string)video,clock-rate=(int)90000,encoding-name=(string)H264 ! decodebin3 ! queue max-size-buffers=1 leaky=2 ! videoconvert ! video/x-raw,format=BGRA ! appsink name=outsink sync=false"
+} (:0) [Base Thread]
+2023-04-27 13:15:17,401  INFO MissionPlanner.Utilities.AutoConnect - {
+  "Label": "Video udp 5100 h264",
+  "Enabled": true,
+  "Port": 5100,
+  "Protocol": 1,
+  "Format": 1,
+  "Direction": 0,
+  "ConfigString": "udpsrc port=5100 buffer-size=90000 ! application/x-rtp,media=(string)video,clock-rate=(int)90000,encoding-name=(string)H264 ! decodebin3 ! queue max-size-buffers=1 leaky=2 ! videoconvert ! video/x-raw,format=BGRA ! appsink name=outsink sync=false"
+} (:0) [Base Thread]
+2023-04-27 13:15:17,405  INFO MissionPlanner.Utilities.AutoConnect - {
+  "Label": "Video udp 5600 h264",
+  "Enabled": true,
+  "Port": 5600,
+  "Protocol": 1,
+  "Format": 1,
+  "Direction": 0,
+  "ConfigString": "udpsrc port=5600 buffer-size=90000 ! application/x-rtp,media=(string)video,clock-rate=(int)90000,encoding-name=(string)H264 ! decodebin3 ! queue max-size-buffers=1 leaky=2 ! videoconvert ! video/x-raw,format=BGRA ! appsink name=outsink sync=false"
+} (:0) [Base Thread]
+2023-04-27 13:15:17,408  INFO MissionPlanner.Utilities.AutoConnect - {
+  "Label": "Video udp 5601 h265",
+  "Enabled": true,
+  "Port": 5601,
+  "Protocol": 1,
+  "Format": 1,
+  "Direction": 0,
+  "ConfigString": "udpsrc port=5601 buffer-size=90000 ! application/x-rtp,media=(string)video,clock-rate=(int)90000,encoding-name=(string)H265 ! decodebin3 ! queue max-size-buffers=1 leaky=2 ! videoconvert ! video/x-raw,format=BGRA ! appsink name=outsink sync=false"
+} (:0) [Base Thread]
+2023-04-27 13:15:17,524  INFO MissionPlanner.MainV2 - appload time (:0) [Base Thread]
+2023-04-27 13:15:17,602 DEBUG MissionPlanner.Program - Loaded: SharpKml, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/SharpKml.dll (:0) [Thread Pool Worker]
+2023-04-27 13:15:17,603 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Thread Pool Worker]
+2023-04-27 13:15:17,646  INFO MissionPlanner.MainV2 - Loaded 4855 airports (:0) [Thread Pool Worker]
+2023-04-27 13:15:17,650 DEBUG MissionPlanner.Utilities.Tracking - v=1&tid=UA-43098846-1&cid=ec5867be-f65d-4c6b-91c8-b9911e902167&t=timing&an=Mission+Planner&av=1.3.80&cd=MissionPlanner.GCSViews.FlightData&dp=MissionPlanner.GCSViews.FlightData&utc=AppLoad&utv=Load+Time&utt=9887&utl=&ul=es-ES&sd=32-bits&sr=1920x892&cd1=Unix+5.19.0.40&cd4=4&z=506460554 (:0) [Thread Pool Worker]
+2023-04-27 13:15:17,958 DEBUG MissionPlanner.Program - Loaded: System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from /usr/lib/mono/gac/System.Web/4.0.0.0__b03f5f7f11d50a3a/System.Web.dll (:0) [Base Thread]
+2023-04-27 13:15:18,206  INFO MissionPlanner.MainV2 - AutoConnect.NewMavlinkConnection UDP14550 (:0) [Thread Pool Worker]
+2023-04-27 13:15:18,280  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example7.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:18,284 DEBUG MissionPlanner.Program - Loaded: example7, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2023-04-27 13:15:18,286  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example7.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:18,634  INFO MissionPlanner.MainV2 - We are connecting to preset UDP14550 (:0) [Base Thread]
+2023-04-27 13:15:18,652  INFO MissionPlanner.MainV2 - Reset connection stats (:0) [Base Thread]
+2023-04-27 13:15:18,655  INFO MissionPlanner.MainV2 - Set Portname (:0) [Base Thread]
+2023-04-27 13:15:18,656  INFO MissionPlanner.MainV2 - Set Baudrate (:0) [Base Thread]
+2023-04-27 13:15:18,658  INFO MissionPlanner.MAVLinkInterface - set giveComport Base Thread current False new True (:0) [Base Thread]
+2023-04-27 13:15:18,660  INFO MissionPlanner.MainV2 - About to do dtr if needed (:0) [Base Thread]
+2023-04-27 13:15:18,661  INFO MissionPlanner.MAVLinkInterface - set giveComport Base Thread current True new False (:0) [Base Thread]
+2023-04-27 13:15:18,663  INFO MissionPlanner.MainV2 - creating logfile 2023-04-27 13-15-18.tlog (:0) [Base Thread]
+2023-04-27 13:15:18,704  INFO MissionPlanner.Controls.ProgressReporterDialogue - RunBackgroundOperation (:0) [Thread Pool Worker]
+2023-04-27 13:15:18,724  INFO MissionPlanner.MAVLinkInterface - Request stream EXTENDED_STATUS at 2 hz for 0:0 (:0) [Base Thread]
+2023-04-27 13:15:18,736  INFO MissionPlanner.MAVLinkInterface - Request stream POSITION at 2 hz for 0:0 (:0) [Base Thread]
+2023-04-27 13:15:18,738  INFO MissionPlanner.MAVLinkInterface - Request stream EXTRA1 at 4 hz for 0:0 (:0) [Base Thread]
+2023-04-27 13:15:18,741  INFO MissionPlanner.MAVLinkInterface - Request stream EXTRA2 at 4 hz for 0:0 (:0) [Base Thread]
+2023-04-27 13:15:18,744  INFO MissionPlanner.MAVLinkInterface - Request stream EXTRA3 at 2 hz for 0:0 (:0) [Base Thread]
+2023-04-27 13:15:18,749  INFO MissionPlanner.MAVLinkInterface - Request stream RAW_SENSORS at 2 hz for 0:0 (:0) [Base Thread]
+2023-04-27 13:15:18,752  INFO MissionPlanner.MAVLinkInterface - Request stream RC_CHANNELS at 2 hz for 0:0 (:0) [Base Thread]
+2023-04-27 13:15:18,778  INFO MissionPlanner.MAVLinkInterface - SubscribeToPacketType DISTANCE_SENSOR System.Func`2[MAVLink+MAVLinkMessage,System.Boolean] False 1 200 (:0) [Thread Pool Worker]
+2023-04-27 13:15:18,780 DEBUG MissionPlanner.MAVLinkInterface - SubscribeToPacketType DISTANCE_SENSOR System.Func`2[MAVLink+MAVLinkMessage,System.Boolean] (:0) [Thread Pool Worker]
+2023-04-27 13:15:18,783  INFO MissionPlanner.MAVLinkInterface - SubscribeToPacketType OBSTACLE_DISTANCE System.Func`2[MAVLink+MAVLinkMessage,System.Boolean] False 1 200 (:0) [Thread Pool Worker]
+2023-04-27 13:15:18,785 DEBUG MissionPlanner.MAVLinkInterface - SubscribeToPacketType OBSTACLE_DISTANCE System.Func`2[MAVLink+MAVLinkMessage,System.Boolean] (:0) [Thread Pool Worker]
+2023-04-27 13:15:18,786  INFO MissionPlanner.Utilities.Proximity - created for 1 - 200 (:0) [Thread Pool Worker]
+2023-04-27 13:15:18,787 DEBUG MissionPlanner.MAVLinkInterface - Subscribed set_parent at offset 0 in file:line:column <filename unknown>:0:0 Parent_OnPacketReceived CurrentState System.EventHandler`1[MAVLink+MAVLinkMessage] (:0) [Thread Pool Worker]
+2023-04-27 13:15:18,860 DEBUG MissionPlanner.Program - Loaded: System.Runtime.InteropServices.RuntimeInformation, Version=4.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from /usr/lib/mono/4.5/Facades/System.Runtime.InteropServices.RuntimeInformation.dll (:0) [Base Thread]
+2023-04-27 13:15:19,195  INFO MissionPlanner.MainV2 - Mav Changed 1 (:0) [Thread Pool Worker]
+2023-04-27 13:15:19,198  INFO MissionPlanner.CurrentState - messageHigh (SAFETY) (:0) [Thread Pool Worker]
+2023-04-27 13:15:19,208  INFO MissionPlanner.MAVLinkInterface - Request stream EXTENDED_STATUS at 2 hz for 1:200 (:0) [Thread Pool Worker]
+2023-04-27 13:15:19,211  INFO MissionPlanner.MAVLinkInterface - Request stream POSITION at 2 hz for 1:200 (:0) [Thread Pool Worker]
+2023-04-27 13:15:19,212  INFO MissionPlanner.MAVLinkInterface - Request stream EXTRA1 at 4 hz for 1:200 (:0) [Thread Pool Worker]
+2023-04-27 13:15:19,213  INFO MissionPlanner.MAVLinkInterface - Request stream EXTRA2 at 4 hz for 1:200 (:0) [Thread Pool Worker]
+2023-04-27 13:15:19,214  INFO MissionPlanner.MAVLinkInterface - Request stream EXTRA3 at 2 hz for 1:200 (:0) [Thread Pool Worker]
+2023-04-27 13:15:19,223  INFO MissionPlanner.MAVLinkInterface - Request stream RAW_SENSORS at 2 hz for 1:200 (:0) [Thread Pool Worker]
+2023-04-27 13:15:19,239  INFO MissionPlanner.MAVLinkInterface - Request stream RC_CHANNELS at 2 hz for 1:200 (:0) [Thread Pool Worker]
+2023-04-27 13:15:19,257  INFO MissionPlanner.MAVLinkInterface - set giveComport Arm State change current False new True (:0) [Arm State change]
+2023-04-27 13:15:19,307  INFO MissionPlanner.Controls.ProgressReporterDialogue - Focus ctl  (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:19,308  INFO MissionPlanner.Controls.ProgressReporterDialogue - in focus invoke (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:19,309  INFO MissionPlanner.Controls.ProgressReporterDialogue - DoWork (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:19,313  INFO MissionPlanner.MAVLinkInterface - SubscribeToPacketType OPEN_DRONE_ID_ARM_STATUS System.Func`2[MAVLink+MAVLinkMessage,System.Boolean] False 1 236 (:0) [ODID_Thread]
+2023-04-27 13:15:19,314 DEBUG MissionPlanner.MAVLinkInterface - SubscribeToPacketType OPEN_DRONE_ID_ARM_STATUS System.Func`2[MAVLink+MAVLinkMessage,System.Boolean] (:0) [ODID_Thread]
+2023-04-27 13:15:19,315  INFO MissionPlanner.MAVLinkInterface - SubscribeToPacketType OPEN_DRONE_ID_ARM_STATUS System.Func`2[MAVLink+MAVLinkMessage,System.Boolean] False 1 237 (:0) [ODID_Thread]
+2023-04-27 13:15:19,315 DEBUG MissionPlanner.MAVLinkInterface - SubscribeToPacketType OPEN_DRONE_ID_ARM_STATUS System.Func`2[MAVLink+MAVLinkMessage,System.Boolean] (:0) [ODID_Thread]
+2023-04-27 13:15:19,316  INFO MissionPlanner.MAVLinkInterface - SubscribeToPacketType OPEN_DRONE_ID_ARM_STATUS System.Func`2[MAVLink+MAVLinkMessage,System.Boolean] False 1 238 (:0) [ODID_Thread]
+2023-04-27 13:15:19,316 DEBUG MissionPlanner.MAVLinkInterface - SubscribeToPacketType OPEN_DRONE_ID_ARM_STATUS System.Func`2[MAVLink+MAVLinkMessage,System.Boolean] (:0) [ODID_Thread]
+2023-04-27 13:15:19,317  INFO MissionPlanner.MAVLinkInterface - SubscribeToPacketType OPEN_DRONE_ID_ARM_STATUS System.Func`2[MAVLink+MAVLinkMessage,System.Boolean] False 1 1 (:0) [ODID_Thread]
+2023-04-27 13:15:19,317 DEBUG MissionPlanner.MAVLinkInterface - SubscribeToPacketType OPEN_DRONE_ID_ARM_STATUS System.Func`2[MAVLink+MAVLinkMessage,System.Boolean] (:0) [ODID_Thread]
+2023-04-27 13:15:19,332  INFO MissionPlanner.Utilities.TerrainFollow - OnPacketReceived to packets (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:19,336 DEBUG MissionPlanner.MAVLinkInterface - Subscribed .ctor at offset 0 in file:line:column <filename unknown>:0:0 _interface_OnPacketReceived TerrainFollow System.EventHandler`1[MAVLink+MAVLinkMessage] (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:19,337  INFO MissionPlanner.MAVLinkInterface - Open port with UDP14550 0 (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:19,339  INFO MissionPlanner.Comms.UdpSerial - UDPSerial socket already open (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:19,357  INFO MissionPlanner.Comms.UdpSerial - UdpSerial DiscardInBuffer 0 (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:19,371  INFO MissionPlanner.MAVLinkInterface - 371 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:19,393  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current True new True (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:19,401 ERROR MissionPlanner.MAVLinkInterface -   at MissionPlanner.MAVLinkInterface.set_giveComport (System.Boolean value) [0x00000] in <bf6bcbb3cadc4bf2ac8fd730df13ebdb>:0 
+  at MissionPlanner.MAVLinkInterface.getHeartBeatAsync () [0x00000] in <bf6bcbb3cadc4bf2ac8fd730df13ebdb>:0 
+  at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1[TResult].Start[TStateMachine] (TStateMachine& stateMachine) [0x00000] in <de882a77e7c14f8ba5d298093dde82b2>:0 
+  at MissionPlanner.MAVLinkInterface.getHeartBeatAsync () [0x00000] in <bf6bcbb3cadc4bf2ac8fd730df13ebdb>:0 
+  at MissionPlanner.MAVLinkInterface.getHeartBeat () [0x00000] in <bf6bcbb3cadc4bf2ac8fd730df13ebdb>:0 
+  at MissionPlanner.MAVLinkInterface.OpenBg (MissionPlanner.Utilities.IProgressReporterDialogue PRsender, System.Boolean getparams) [0x00000] in <bf6bcbb3cadc4bf2ac8fd730df13ebdb>:0 
+  at MissionPlanner.MAVLinkInterface.FrmProgressReporterDoWorkNOParams (MissionPlanner.Utilities.IProgressReporterDialogue sender) [0x00000] in <bf6bcbb3cadc4bf2ac8fd730df13ebdb>:0 
+  at MissionPlanner.Controls.ProgressReporterDialogue.RunBackgroundOperation (System.Object o) [0x00000] in <9494e2dad500429fb5072923df11daa9>:0 
+  at System.Threading.QueueUserWorkItemCallback.WaitCallback_Context (System.Object state) [0x00000] in <de882a77e7c14f8ba5d298093dde82b2>:0 
+  at System.Threading.ExecutionContext.RunInternal (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <de882a77e7c14f8ba5d298093dde82b2>:0 
+  at System.Threading.ExecutionContext.Run (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <de882a77e7c14f8ba5d298093dde82b2>:0 
+  at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem () [0x00000] in <de882a77e7c14f8ba5d298093dde82b2>:0 
+  at System.Threading.ThreadPoolWorkQueue.Dispatch () [0x00000] in <de882a77e7c14f8ba5d298093dde82b2>:0 
+  at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback () [0x00000] in <de882a77e7c14f8ba5d298093dde82b2>:0  (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:19,440 DEBUG MissionPlanner.MAVLinkInterface - Subscribed set_parent at offset 0 in file:line:column <filename unknown>:0:0 Parent_OnPacketReceived CurrentState System.EventHandler`1[MAVLink+MAVLinkMessage] (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:19,616 DEBUG MissionPlanner.Program - Loaded: DotSpatial.Positioning, Version=3.0.1.0, Culture=neutral, PublicKeyToken=f6f66d1554473068 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/DotSpatial.Positioning.dll (:0) [Thread Pool Worker]
+2023-04-27 13:15:20,025  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2023-04-27 13:15:20,029  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2023-04-27 13:15:20,095  INFO MissionPlanner.GCSViews.FlightData - Activate Called (:0) [Base Thread]
+2023-04-27 13:15:20,128  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2023-04-27 13:15:20,133  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2023-04-27 13:15:20,141  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2023-04-27 13:15:20,150  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2023-04-27 13:15:20,301  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example8-modechange.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:20,302 DEBUG MissionPlanner.Program - Loaded: example8-modechange, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2023-04-27 13:15:20,304  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example8-modechange.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:20,339  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2023-04-27 13:15:20,341  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2023-04-27 13:15:20,433  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2023-04-27 13:15:20,443  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2023-04-27 13:15:22,191  INFO MissionPlanner.MAVLinkInterface - getWP Retry 5 (:0) [Thread Pool Worker]
+2023-04-27 13:15:22,192  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current True new False (:0) [Thread Pool Worker]
+2023-04-27 13:15:22,213  INFO MissionPlanner.MAVLinkInterface - 213 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:22,215  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:22,272  INFO MissionPlanner.Utilities.Airports - getAirports - regen list (:0) [FD Mainloop]
+2023-04-27 13:15:22,275  INFO MissionPlanner.Utilities.Airports - getAirports done 0,00316 sec (:0) [FD Mainloop]
+2023-04-27 13:15:22,305  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example2.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:22,308 DEBUG MissionPlanner.Program - Loaded: example7, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2023-04-27 13:15:22,311  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example2.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:23,123 DEBUG MissionPlanner.Utilities.nfz.HK - fl=533f125
+h=www.cloudflare.com
+ip=85.112.5.11
+ts=1682594123.021
+visit_scheme=https
+uag=
+colo=CDG
+sliver=none
+http=http/1.1
+loc=ES
+tls=TLSv1.2
+sni=plaintext
+warp=off
+gateway=off
+rbi=off
+kex=X25519
+ (:0) [Thread Pool Worker]
+2023-04-27 13:15:23,205 DEBUG MissionPlanner.Utilities.nfz.EU - fl=533f125
+h=www.cloudflare.com
+ip=85.112.5.11
+ts=1682594123.179
+visit_scheme=https
+uag=
+colo=CDG
+sliver=none
+http=http/1.1
+loc=ES
+tls=TLSv1.2
+sni=plaintext
+warp=off
+gateway=off
+rbi=off
+kex=X25519
+ (:0) [Thread Pool Worker]
+2023-04-27 13:15:24,314  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example9-hudonoff.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:24,315 DEBUG MissionPlanner.Program - Loaded: example9-hudonoff, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2023-04-27 13:15:24,319  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init HUD 0.2 by Michael Oborne (:0) [Thread Pool Worker]
+2023-04-27 13:15:24,320  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example9-hudonoff.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:25,197  INFO MissionPlanner.MAVLinkInterface - getWP Retry 4 (:0) [Thread Pool Worker]
+2023-04-27 13:15:25,198  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current True new False (:0) [Thread Pool Worker]
+2023-04-27 13:15:25,205  INFO MissionPlanner.MAVLinkInterface - 205 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:25,207  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:26,322  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example13-herelink2.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:26,327 DEBUG MissionPlanner.Program - Loaded: example13-herelink2, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2023-04-27 13:15:26,329  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example13-herelink2.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:28,213  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current True new False (:0) [Thread Pool Worker]
+2023-04-27 13:15:28,213  INFO MissionPlanner.MAVLinkInterface - getWP Retry 3 (:0) [Thread Pool Worker]
+2023-04-27 13:15:28,219  INFO MissionPlanner.MAVLinkInterface - 219 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:28,239  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:28,332  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example6.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:28,334 DEBUG MissionPlanner.Program - Loaded: example7, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2023-04-27 13:15:28,336  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example6.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:29,204  INFO MissionPlanner.CurrentState - messageHigh (SAFETY) (:0) [Thread Pool Worker]
+2023-04-27 13:15:30,204  INFO MissionPlanner.MAVLinkInterface - ID sys 1 comp 200 ver3 type HELICOPTER name GENERIC (:0) [Thread Pool Worker]
+2023-04-27 13:15:30,205  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current True new False (:0) [Thread Pool Worker]
+2023-04-27 13:15:30,223  INFO MissionPlanner.MAVLinkInterface - 223 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:30,225  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:30,337  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example6-mapicondesc.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:30,340 DEBUG MissionPlanner.Program - Loaded: example6-mapicondesc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2023-04-27 13:15:30,343  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init MapIconDesc 0.10 by Michael Oborne (:0) [Thread Pool Worker]
+2023-04-27 13:15:30,344  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example6-mapicondesc.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:31,203  INFO MissionPlanner.MAVLinkInterface - mav 1-200 seqno 92 exp 89 pkts lost 3 (:0) [Thread Pool Worker]
+2023-04-27 13:15:31,204  INFO MissionPlanner.MAVLinkInterface - getWP Retry 2 (:0) [Thread Pool Worker]
+2023-04-27 13:15:32,204  INFO MissionPlanner.MAVLinkInterface - ID sys 1 comp 200 ver3 type HELICOPTER name GENERIC (:0) [Thread Pool Worker]
+2023-04-27 13:15:32,205  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current True new False (:0) [Thread Pool Worker]
+2023-04-27 13:15:32,207  INFO MissionPlanner.MAVLinkInterface - 207 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:32,209  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:32,347  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example2-menu.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:32,351 DEBUG MissionPlanner.Program - Loaded: example2-menu, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2023-04-27 13:15:32,355  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init Small stuff 0.10 by EOSBandi (:0) [Thread Pool Worker]
+2023-04-27 13:15:32,356  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example2-menu.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:34,206  INFO MissionPlanner.MAVLinkInterface - getWP Retry 1 (:0) [Thread Pool Worker]
+2023-04-27 13:15:34,357  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example4.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:34,360 DEBUG MissionPlanner.Program - Loaded: example7, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2023-04-27 13:15:34,363  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example4.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:35,206  INFO MissionPlanner.MAVLinkInterface - ID sys 1 comp 200 ver3 type HELICOPTER name GENERIC (:0) [Thread Pool Worker]
+2023-04-27 13:15:35,208  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current True new False (:0) [Thread Pool Worker]
+2023-04-27 13:15:35,210  INFO MissionPlanner.MAVLinkInterface - 210 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:35,211  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:36,366  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example7-canrtcm.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:36,368  INFO MissionPlanner.Plugin.PluginLoader - Try load DroneCAN (:0) [Thread Pool Worker]
+2023-04-27 13:15:36,369 DEBUG MissionPlanner.Program - Loaded: example7-canrtcm, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2023-04-27 13:15:36,372  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init CAN RTCM Extract 0.10 by Michael Oborne (:0) [Thread Pool Worker]
+2023-04-27 13:15:36,373  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example7-canrtcm.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:37,206  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current True new False (:0) [Thread Pool Worker]
+2023-04-27 13:15:38,208  INFO MissionPlanner.MAVLinkInterface - ID sys 1 comp 200 ver3 type HELICOPTER name GENERIC (:0) [Thread Pool Worker]
+2023-04-27 13:15:38,211  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current False new False (:0) [Thread Pool Worker]
+2023-04-27 13:15:38,216  INFO MissionPlanner.MAVLinkInterface - ID sys 1 comp 200 ver3 type HELICOPTER name GENERIC (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:38,218  INFO MissionPlanner.MAVLinkInterface - HB Selection 1-200 seen 4 (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:38,228  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:38,374  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example18-externalapi.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:38,375  INFO MissionPlanner.Plugin.PluginLoader - Try load BouncyCastle (:0) [Thread Pool Worker]
+2023-04-27 13:15:38,377 DEBUG MissionPlanner.Program - Loaded: BouncyCastle, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/BouncyCastle.dll (:0) [Thread Pool Worker]
+2023-04-27 13:15:38,983 DEBUG MissionPlanner.Program - Loaded: System.Globalization, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from /usr/lib/mono/4.5/Facades/System.Globalization.dll (:0) [Thread Pool Worker]
+2023-04-27 13:15:39,207  INFO MissionPlanner.MAVLinkInterface - mav 1-200 seqno 124 exp 89 pkts lost 35 (:0) [Thread Pool Worker]
+2023-04-27 13:15:39,211  INFO MissionPlanner.CurrentState - messageHigh (SAFETY) (:0) [Thread Pool Worker]
+2023-04-27 13:15:39,212  INFO MissionPlanner.MAVLinkInterface - ID sys 1 comp 200 ver3 type HELICOPTER name GENERIC (:0) [Thread Pool Worker]
+2023-04-27 13:15:39,214  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current True new False (:0) [Thread Pool Worker]
+2023-04-27 13:15:39,231  INFO MissionPlanner.MAVLinkInterface - doCommand cmd REQUEST_MESSAGE 148 0 0 0 0 0 0 (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:39,247  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new False (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:39,255  INFO MissionPlanner.MAVLinkInterface - doCommand cmd REQUEST_AUTOPILOT_CAPABILITIES 0 0 0 0 0 0 0 (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:39,256  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new False (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:39,259  INFO MissionPlanner.MAVLinkInterface - SubscribeToPacketType AUTOPILOT_VERSION System.Func`2[MAVLink+MAVLinkMessage,System.Boolean] False 1 200 (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:39,260 DEBUG MissionPlanner.MAVLinkInterface - SubscribeToPacketType AUTOPILOT_VERSION System.Func`2[MAVLink+MAVLinkMessage,System.Boolean] (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:39,765  INFO MissionPlanner.MAVLinkInterface - getVersion Retry 3 (:0) [Thread Pool Worker]
+2023-04-27 13:15:40,000  INFO MissionPlanner.MAVLinkInterface - doCommand cmd REQUEST_MESSAGE 148 0 0 0 0 0 0 (:0) [Thread Pool Worker]
+2023-04-27 13:15:40,002  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current False new False (:0) [Thread Pool Worker]
+2023-04-27 13:15:40,006  INFO MissionPlanner.MAVLinkInterface - doCommand cmd REQUEST_AUTOPILOT_CAPABILITIES 0 0 0 0 0 0 0 (:0) [Thread Pool Worker]
+2023-04-27 13:15:40,009  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current False new False (:0) [Thread Pool Worker]
+2023-04-27 13:15:40,269  INFO MissionPlanner.MAVLinkInterface - getVersion Retry 2 (:0) [Thread Pool Worker]
+2023-04-27 13:15:40,452 DEBUG MissionPlanner.Program - Loaded: Microsoft.CodeAnalysis.CSharp.resources, Version=3.9.0.0, Culture=es, PublicKeyToken=31bf3856ad364e35 from /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/es/Microsoft.CodeAnalysis.CSharp.resources.dll (:0) [Thread Pool Worker]
+2023-04-27 13:15:40,478  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example18-externalapi.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:40,787  INFO MissionPlanner.MAVLinkInterface - getVersion Retry 1 (:0) [Thread Pool Worker]
+2023-04-27 13:15:41,291 DEBUG MissionPlanner.MAVLinkInterface - UnSubscribeToPacketType 1046053037 (:0) [Thread Pool Worker]
+2023-04-27 13:15:41,298  INFO MissionPlanner.MAVLinkInterface - doCommand cmd DO_SEND_BANNER 0 0 0 0 0 0 0 (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:41,300  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new False (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:41,303  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new False (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:41,305  INFO MissionPlanner.MAVLinkInterface - Done open 1 200 (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:41,306  INFO MissionPlanner.Controls.ProgressReporterDialogue - DoWork Done (:0) [ProgressReporterDialogue Background thread]
+2023-04-27 13:15:42,479  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example3.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:42,482 DEBUG MissionPlanner.Program - Loaded: example7, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2023-04-27 13:15:42,485  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example3.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:44,487  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example5.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:44,489 DEBUG MissionPlanner.Program - Loaded: example7, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2023-04-27 13:15:44,491  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example5.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:46,492  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example12-forwarding.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:46,496 DEBUG MissionPlanner.Program - Loaded: example12-forwarding, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2023-04-27 13:15:46,502  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example12-forwarding.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:48,506  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example14-mass.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:48,510 DEBUG MissionPlanner.Program - Loaded: example14-mass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2023-04-27 13:15:48,516  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init mass Control 0.10 by Michael Oborne (:0) [Thread Pool Worker]
+2023-04-27 13:15:48,520  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example14-mass.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:49,221  INFO MissionPlanner.CurrentState - messageHigh (SAFETY) (:0) [Thread Pool Worker]
+2023-04-27 13:15:50,525  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example21-persistentsimple.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:50,540 DEBUG MissionPlanner.Program - Loaded: example21-persistentsimple, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2023-04-27 13:15:50,548  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example21-persistentsimple.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:52,551  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example10-canlogfile.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:52,552  INFO MissionPlanner.Plugin.PluginLoader - Try load DroneCAN (:0) [Thread Pool Worker]
+2023-04-27 13:15:52,562 DEBUG MissionPlanner.Program - Loaded: example10-canlogfile, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2023-04-27 13:15:52,566  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init CAN Log Extract 0.10 by Michael Oborne (:0) [Thread Pool Worker]
+2023-04-27 13:15:52,568  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example10-canlogfile.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:54,570  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:54,571  INFO MissionPlanner.Plugin.PluginLoader - Try load MissionPlanner.WebAPIs (:0) [Thread Pool Worker]
+2023-04-27 13:15:54,573 DEBUG MissionPlanner.Program - Loaded: example, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2023-04-27 13:15:54,578  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/tsvillaluenga/Documentos/C_Mavlink_project/C_Mavlink_project/MissionPlanner/plugins/example.cs (:0) [Thread Pool Worker]
+2023-04-27 13:15:55,143 ERROR MissionPlanner.Program - Assembly[] {} (:0) [Thread Pool Worker]
+2023-04-27 13:15:55,152 DEBUG MissionPlanner.Program - System.InvalidOperationException: Collection was modified; enumeration operation may not execute.
+  at System.Collections.Generic.List`1+Enumerator[T].MoveNextRare () [0x00013] in <de882a77e7c14f8ba5d298093dde82b2>:0 
+  at System.Collections.Generic.List`1+Enumerator[T].MoveNext () [0x0004a] in <de882a77e7c14f8ba5d298093dde82b2>:0 
+  at AltitudeAngelWings.Plugin.MessageDisplay.FormatMessages () [0x00029] in <2cd785713e444ac09f324d7089d363cd>:0 
+  at AltitudeAngelWings.Plugin.MessageDisplay.RemoveMessage (AltitudeAngelWings.Models.Message message) [0x0001a] in <2cd785713e444ac09f324d7089d363cd>:0 
+  at System.Reactive.AnonymousSafeObserver`1[T].OnNext (T value) [0x0000a] in <36b950158dfb41e0a66c316bd11c945f>:0 
+  at System.Reactive.Linq.ObservableImpl.Delay`2+Base`1+_+DelayObserver[TSource,TDelay,TParent].OnNext (TDelay value) [0x00016] in <36b950158dfb41e0a66c316bd11c945f>:0 
+  at System.Reactive.Linq.ObservableImpl.Timer+Single+_.Invoke () [0x00000] in <36b950158dfb41e0a66c316bd11c945f>:0 
+  at System.Reactive.Concurrency.Scheduler.Invoke (System.Reactive.Concurrency.IScheduler scheduler, System.Action action) [0x00000] in <36b950158dfb41e0a66c316bd11c945f>:0 
+  at System.Reactive.Concurrency.DefaultScheduler+<>c__DisplayClass6_0`1[TState].<Schedule>b__0 (System.Object _) [0x0000d] in <36b950158dfb41e0a66c316bd11c945f>:0 
+  at System.Reactive.Concurrency.ConcurrencyAbstractionLayerImpl+Timer.Tick (System.Object state) [0x00000] in <36b950158dfb41e0a66c316bd11c945f>:0 
+  at System.Threading.Timer+Scheduler.TimerCB (System.Object o) [0x00007] in <de882a77e7c14f8ba5d298093dde82b2>:0 
+  at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem () [0x00008] in <de882a77e7c14f8ba5d298093dde82b2>:0 
+  at System.Threading.ThreadPoolWorkQueue.Dispatch () [0x00074] in <de882a77e7c14f8ba5d298093dde82b2>:0 
+  at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback () [0x00000] in <de882a77e7c14f8ba5d298093dde82b2>:0  (:0) [Thread Pool Worker]
+2023-04-27 13:15:55,160 DEBUG MissionPlanner.Utilities.Tracking - v=1&tid=UA-43098846-1&cid=ec5867be-f65d-4c6b-91c8-b9911e902167&t=exception&an=Mission+Planner&av=1.3.80&cd=MissionPlanner.GCSViews.FlightData&dp=MissionPlanner.GCSViews.FlightData&exd=Collection+was+modified%3B+enumeration+operation+may+not+execute.&exf=0&cd5=System.InvalidOperationException%3A+Collection+was+modified%3B+enumeration+operation+may+not+execute.%0A++at+System.Collections.Generic.List%601%2BEnu&ul=es-ES&sd=32-bits&sr=1920x892&cd1=Unix+5.19.0.40&cd4=4&z=268515119 (:0) [Thread Pool Worker]
+2023-04-27 13:15:55,160 ERROR MissionPlanner.Program - System.InvalidOperationException: Collection was modified; enumeration operation may not execute.
+  at System.Collections.Generic.List`1+Enumerator[T].MoveNextRare () [0x00013] in <de882a77e7c14f8ba5d298093dde82b2>:0 
+  at System.Collections.Generic.List`1+Enumerator[T].MoveNext () [0x0004a] in <de882a77e7c14f8ba5d298093dde82b2>:0 
+  at AltitudeAngelWings.Plugin.MessageDisplay.FormatMessages () [0x00029] in <2cd785713e444ac09f324d7089d363cd>:0 
+  at AltitudeAngelWings.Plugin.MessageDisplay.RemoveMessage (AltitudeAngelWings.Models.Message message) [0x0001a] in <2cd785713e444ac09f324d7089d363cd>:0 
+  at System.Reactive.AnonymousSafeObserver`1[T].OnNext (T value) [0x0000a] in <36b950158dfb41e0a66c316bd11c945f>:0 
+  at System.Reactive.Linq.ObservableImpl.Delay`2+Base`1+_+DelayObserver[TSource,TDelay,TParent].OnNext (TDelay value) [0x00016] in <36b950158dfb41e0a66c316bd11c945f>:0 
+  at System.Reactive.Linq.ObservableImpl.Timer+Single+_.Invoke () [0x00000] in <36b950158dfb41e0a66c316bd11c945f>:0 
+  at System.Reactive.Concurrency.Scheduler.Invoke (System.Reactive.Concurrency.IScheduler scheduler, System.Action action) [0x00000] in <36b950158dfb41e0a66c316bd11c945f>:0 
+  at System.Reactive.Concurrency.DefaultScheduler+<>c__DisplayClass6_0`1[TState].<Schedule>b__0 (System.Object _) [0x0000d] in <36b950158dfb41e0a66c316bd11c945f>:0 
+  at System.Reactive.Concurrency.ConcurrencyAbstractionLayerImpl+Timer.Tick (System.Object state) [0x00000] in <36b950158dfb41e0a66c316bd11c945f>:0 
+  at System.Threading.Timer+Scheduler.TimerCB (System.Object o) [0x00007] in <de882a77e7c14f8ba5d298093dde82b2>:0 
+  at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem () [0x00008] in <de882a77e7c14f8ba5d298093dde82b2>:0 
+  at System.Threading.ThreadPoolWorkQueue.Dispatch () [0x00074] in <de882a77e7c14f8ba5d298093dde82b2>:0 
+  at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback () [0x00000] in <de882a77e7c14f8ba5d298093dde82b2>:0  (:0) [Thread Pool Worker]

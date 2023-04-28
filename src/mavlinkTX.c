@@ -67,6 +67,13 @@ float roll;
 float yaw;
 } TAttitude;
 
+typedef struct
+{
+float lat;
+float longi;
+float alt;
+} TPos;
+
 
 TAttitude attitude, preattitude = {0.0, 0.0, 0.0}, attitude_speed;
 
@@ -78,7 +85,7 @@ int main(int argc, char* argv[])
 	
 	char target_ip[100];
 	
-	float position[6] = {};
+	float position[6] = {0, 0, 0, 0 ,0 ,0};
 	int sock = socket(PF_INET, SOCK_DGRAM, IPPROTO_UDP);
 	struct sockaddr_in gcAddr; 
 	struct sockaddr_in locAddr;
@@ -117,20 +124,7 @@ int main(int argc, char* argv[])
 		strcpy(target_ip, argv[1]);
     }
 	
-	
-	memset(&locAddr, 0, sizeof(locAddr));
-	locAddr.sin_family = AF_INET;
-	locAddr.sin_addr.s_addr = INADDR_ANY;
-	locAddr.sin_port = htons(14551);
-	
-	/* Bind the socket to port 14551 - necessary to receive packets from qgroundcontrol */ 
-	if (-1 == bind(sock,(struct sockaddr *)&locAddr, sizeof(struct sockaddr)))
-    {
-		perror("error bind failed");
-		close(sock);
-		exit(EXIT_FAILURE);
-    } 
-	
+		
 	/* Attempt to make it non blocking */
 #if (defined __QNX__) | (defined __QNXNTO__)
 	if (fcntl(sock, F_SETFL, O_NONBLOCK | FASYNC) < 0)
@@ -150,7 +144,12 @@ int main(int argc, char* argv[])
 	gcAddr.sin_addr.s_addr = inet_addr(target_ip);
 	gcAddr.sin_port = htons(14550);
 	
-	
+
+	/* Global position origin */
+	mavlink_msg_set_gps_global_origin_pack(1, 200, &msg, 0, 0, 0, 100000, microsSinceEpoch());
+	len = mavlink_msg_to_send_buffer(buf, &msg);
+	bytes_sent = sendto(sock, buf, len, 0, (struct sockaddr*)&gcAddr, sizeof(struct sockaddr_in));
+
 	
 	for (;;) 
     {
@@ -185,7 +184,8 @@ int main(int argc, char* argv[])
 		len = mavlink_msg_to_send_buffer(buf, &msg);
 		bytes_sent = sendto(sock, buf, len, 0, (struct sockaddr*)&gcAddr, sizeof(struct sockaddr_in));
 		
-		
+
+
 		memset(buf, 0, BUFFER_LENGTH);
 		recsize = recvfrom(sock, (void *)buf, BUFFER_LENGTH, 0, (struct sockaddr *)&gcAddr, &fromlen);
 		if (recsize > 0)
