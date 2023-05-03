@@ -69,13 +69,15 @@ float yaw;
 
 typedef struct
 {
-float lat;
-float longi;
+uint32_t lat;
+uint32_t  longi;
 float alt;
 } TPos;
 
-
+TPos pos = {0,0,100000};
 TAttitude attitude, preattitude = {0.0, 0.0, 0.0}, attitude_speed;
+
+uint32_t lon = 0.0;
 
 int main(int argc, char* argv[])
 {
@@ -86,6 +88,7 @@ int main(int argc, char* argv[])
 	char target_ip[100];
 	
 	float position[6] = {0, 0, 0, 0 ,0 ,0};
+	mavlink_global_position_int_t packet;
 	int sock = socket(PF_INET, SOCK_DGRAM, IPPROTO_UDP);
 	struct sockaddr_in gcAddr; 
 	struct sockaddr_in locAddr;
@@ -146,9 +149,9 @@ int main(int argc, char* argv[])
 	
 
 	/* Global position origin */
-	mavlink_msg_set_gps_global_origin_pack(1, 200, &msg, 0, 0, 0, 100000, microsSinceEpoch());
+	/*mavlink_msg_set_gps_global_origin_pack(1, 200, &msg, 1, 0, 0, 100000, microsSinceEpoch());
 	len = mavlink_msg_to_send_buffer(buf, &msg);
-	bytes_sent = sendto(sock, buf, len, 0, (struct sockaddr*)&gcAddr, sizeof(struct sockaddr_in));
+	bytes_sent = sendto(sock, buf, len, 0, (struct sockaddr*)&gcAddr, sizeof(struct sockaddr_in));*/
 
 	
 	for (;;) 
@@ -163,7 +166,7 @@ int main(int argc, char* argv[])
         preattitude.yaw = attitude.yaw;
 
 		/*Send Heartbeat */
-		mavlink_msg_heartbeat_pack(1, 200, &msg, MAV_TYPE_HELICOPTER, MAV_AUTOPILOT_GENERIC, MAV_MODE_GUIDED_ARMED, 0, MAV_STATE_ACTIVE);
+		mavlink_msg_heartbeat_pack(1, 200, &msg, MAV_TYPE_AIRSHIP, MAV_AUTOPILOT_GENERIC, MAV_MODE_GUIDED_ARMED, 0, MAV_STATE_ACTIVE);
 		len = mavlink_msg_to_send_buffer(buf, &msg);
 		bytes_sent = sendto(sock, buf, len, 0, (struct sockaddr*)&gcAddr, sizeof(struct sockaddr_in));
 		
@@ -173,16 +176,44 @@ int main(int argc, char* argv[])
 		bytes_sent = sendto(sock, buf, len, 0, (struct sockaddr*)&gcAddr, sizeof (struct sockaddr_in));
 		
 		/* Send Local Position */
-		mavlink_msg_local_position_ned_pack(1, 200, &msg, microsSinceEpoch(), 
+		/*mavlink_msg_local_position_ned_pack(1, 200, &msg, microsSinceEpoch(), 
 										position[0], position[1], position[2],
 										position[3], position[4], position[5]);
 		len = mavlink_msg_to_send_buffer(buf, &msg);
-		bytes_sent = sendto(sock, buf, len, 0, (struct sockaddr*)&gcAddr, sizeof(struct sockaddr_in));
-		
-		/* Send attitude */
-		mavlink_msg_attitude_pack(1, 200, &msg, microsSinceEpoch(), attitude.roll, attitude.pitch, attitude.yaw, attitude_speed.roll, attitude_speed.pitch, attitude_speed.yaw);
+		bytes_sent = sendto(sock, buf, len, 0, (struct sockaddr*)&gcAddr, sizeof(struct sockaddr_in));*/
+
+
+
+/*
+
+		mavlink_msg_global_position_int_pack(1, 200, &msg, microsSinceEpoch(), pos.lat, pos.longi++, pos.alt, pos.alt, 0, 0, 0, UINT16_MAX);
 		len = mavlink_msg_to_send_buffer(buf, &msg);
 		bytes_sent = sendto(sock, buf, len, 0, (struct sockaddr*)&gcAddr, sizeof(struct sockaddr_in));
+*/
+
+
+		packet.time_boot_ms = microsSinceEpoch();
+		packet.lat = (int32_t) (packet.lon + 1E07);
+		packet.lon = (int32_t) 0;
+		packet.alt = (int32_t) 1000000;
+		packet.relative_alt = (int32_t) (packet.lat + 10000);
+		packet.vx = (int16_t) 0;
+		packet.vy = (int16_t) 0;
+		packet.vz = (int16_t) 0;
+		packet.hdg = (uint16_t) UINT16_MAX;
+
+		mavlink_msg_global_position_int_encode(1, 200, &msg, &packet);
+		len = mavlink_msg_to_send_buffer(buf, &msg);
+		bytes_sent = sendto(sock, buf, len, 0, (struct sockaddr*)&gcAddr, sizeof(struct sockaddr_in));
+
+
+
+
+
+		/* Send attitude */
+		/*mavlink_msg_attitude_pack(1, 200, &msg, microsSinceEpoch(), attitude.roll, attitude.pitch, attitude.yaw, attitude_speed.roll, attitude_speed.pitch, attitude_speed.yaw);
+		len = mavlink_msg_to_send_buffer(buf, &msg);
+		bytes_sent = sendto(sock, buf, len, 0, (struct sockaddr*)&gcAddr, sizeof(struct sockaddr_in));*/
 		
 
 
@@ -208,7 +239,7 @@ int main(int argc, char* argv[])
 			printf("\n");
 		}
 		memset(buf, 0, BUFFER_LENGTH);
-		sleep(1); // Sleep one second
+		usleep(1000*100); // Sleep one second
     }
 }
 
