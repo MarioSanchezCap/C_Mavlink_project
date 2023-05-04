@@ -54,6 +54,8 @@
 #include <mavlink.h>
 #include <math.h>
 #include "memComp.h"
+#include "mavlink_msg_global_position_int.h"
+
 
 
 #define BUFFER_LENGTH 2041 // minimum buffer size that can be used with qnx (I don't know why)
@@ -166,14 +168,14 @@ int main(int argc, char* argv[])
         preattitude.yaw = attitude.yaw;
 
 		/*Send Heartbeat */
-		mavlink_msg_heartbeat_pack(1, 200, &msg, MAV_TYPE_AIRSHIP, MAV_AUTOPILOT_GENERIC, MAV_MODE_GUIDED_ARMED, 0, MAV_STATE_ACTIVE);
+		mavlink_msg_heartbeat_pack(1, 200, &msg, MAV_TYPE_FIXED_WING, MAV_AUTOPILOT_GENERIC, MAV_MODE_GUIDED_ARMED, 0, MAV_STATE_ACTIVE);
 		len = mavlink_msg_to_send_buffer(buf, &msg);
 		bytes_sent = sendto(sock, buf, len, 0, (struct sockaddr*)&gcAddr, sizeof(struct sockaddr_in));
 		
 		/* Send Status */
-		mavlink_msg_sys_status_pack(1, 200, &msg, 0, 0, 0, 500, 11000, -1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+		/*mavlink_msg_sys_status_pack(1, 200, &msg, 0, 0, 0, 500, 11000, -1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 		len = mavlink_msg_to_send_buffer(buf, &msg);
-		bytes_sent = sendto(sock, buf, len, 0, (struct sockaddr*)&gcAddr, sizeof (struct sockaddr_in));
+		bytes_sent = sendto(sock, buf, len, 0, (struct sockaddr*)&gcAddr, sizeof (struct sockaddr_in));*/
 		
 		/* Send Local Position */
 		/*mavlink_msg_local_position_ned_pack(1, 200, &msg, microsSinceEpoch(), 
@@ -193,8 +195,8 @@ int main(int argc, char* argv[])
 
 
 		packet.time_boot_ms = microsSinceEpoch();
-		packet.lat = (int32_t) (packet.lon + 1E07);
-		packet.lon = (int32_t) 0;
+		packet.lat = (int32_t) 0;
+		packet.lon = (int32_t) ((lon++)* 1E07);
 		packet.alt = (int32_t) 1000000;
 		packet.relative_alt = (int32_t) (packet.lat + 10000);
 		packet.vx = (int16_t) 0;
@@ -211,9 +213,9 @@ int main(int argc, char* argv[])
 
 
 		/* Send attitude */
-		/*mavlink_msg_attitude_pack(1, 200, &msg, microsSinceEpoch(), attitude.roll, attitude.pitch, attitude.yaw, attitude_speed.roll, attitude_speed.pitch, attitude_speed.yaw);
+		mavlink_msg_attitude_pack(1, 200, &msg, microsSinceEpoch(), attitude.roll, attitude.pitch, attitude.yaw, attitude_speed.roll, attitude_speed.pitch, attitude_speed.yaw);
 		len = mavlink_msg_to_send_buffer(buf, &msg);
-		bytes_sent = sendto(sock, buf, len, 0, (struct sockaddr*)&gcAddr, sizeof(struct sockaddr_in));*/
+		bytes_sent = sendto(sock, buf, len, 0, (struct sockaddr*)&gcAddr, sizeof(struct sockaddr_in));
 		
 
 
